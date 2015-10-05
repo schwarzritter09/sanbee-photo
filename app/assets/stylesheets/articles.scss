@@ -1,0 +1,15 @@
+// Place all the styles related to the articles controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+tr.odd td {
+  background-color: #DDFFFF;
+}
+
+tr.even td {
+  background-color: #AAFFFF;
+}
+
+tr.closed td {
+  background-color: #C0C0C0;
+}

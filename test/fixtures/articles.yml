@@ -1,0 +1,13 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  message: MyString
+  close_flag: false
+  user_id: 1
+  member_id: 1
+
+two:
+  message: MyString
+  close_flag: false
+  user_id: 1
+  member_id: 1

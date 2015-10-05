@@ -1,0 +1,29 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Listing Requestmembers</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Article</th>
+      <th>Member</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @requestmembers.each do |requestmember| %>
+      <tr>
+        <td><%= requestmember.article_id %></td>
+        <td><%= requestmember.member_id %></td>
+        <td><%= link_to 'Show', requestmember %></td>
+        <td><%= link_to 'Edit', edit_requestmember_path(requestmember) %></td>
+        <td><%= link_to 'Destroy', requestmember, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Requestmember', new_requestmember_path %>

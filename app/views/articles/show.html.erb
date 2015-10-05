@@ -1,0 +1,51 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>メッセージ</strong>
+  <%= @article.message %>
+</p>
+
+<p>
+  <strong>取引済み</strong>
+  <%= @article.close_flag %>
+</p>
+
+<p>
+  <strong>譲</strong>
+  <%= @article.member.name %>
+</p>
+
+<p>
+  <strong>求</strong>
+  <% @article.members.each do |requestmember| %>
+    <%= requestmember.name %> <br>
+  <% end %>
+</p>
+
+<p>
+	<strong>表面</strong>
+  	<% if @article.obverse_photo? %>
+  	  	<%= image_tag @article.obverse_photo.url %>
+  	<% end %>
+</p>
+
+<p>
+	<strong>裏面</strong>
+  	<% if @article.reverse_photo? %>
+  	  	<%= image_tag @article.reverse_photo.url %>
+  	<% end %>
+</p>
+
+<p>
+  <strong>投稿者</strong>
+  <%= link_to @article.user.username, "http://twitter.com/#{@article.user.username}" %>
+</p>
+
+<a href="https://twitter.com/share" class="twitter-share-button" data-text="譲:<%= @article.member.name %> 求:<% @article.members.each_with_index do |requestmember, i| %><%= requestmember.name %><%= i+1>=@article.members.count ? '' : ','%><% end %>" data-count="none" data-hashtags="3Bjr写真交換">Tweet</a>
+<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
+
+<% if user_signed_in? && @article.user_id == current_user.id %>
+<%= link_to '編集', edit_article_path(@article) %> |
+<%= link_to '削除', @article, method: :delete, data: { confirm: '本当に削除しますか？' } %> |
+<% end %>
+<%= link_to '戻る', articles_path %>
