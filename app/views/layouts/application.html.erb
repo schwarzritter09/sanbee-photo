@@ -8,10 +8,10 @@
 </head>
 <body>
 <% if user_signed_in? %>
-  Logged in as [<strong><%= current_user.username %></strong>].
-  <%= link_to "Sign out", destroy_user_session_path %>
+  [<strong><%= current_user.username %></strong>].
+  <%= link_to "ログオフ", destroy_user_session_path %>
 <% else %>
-  <%= link_to "Sign in with Twitter", user_omniauth_authorize_path(:twitter) %>
+  <%= link_to "Twitterでログイン", user_omniauth_authorize_path(:twitter) %>
 <% end %>
 
 <p class="notice"><%= notice %></p>

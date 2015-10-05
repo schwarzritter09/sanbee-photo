@@ -46,6 +46,9 @@ gem 'kaminari'
 # Use Heroku
 gem 'rails_12factor', group: :production
 
+# Use image resize
+gem 'rmagick', :require => 'RMagick'
+
 group :production do
   gem 'pg'
 end

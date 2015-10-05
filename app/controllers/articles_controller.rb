@@ -14,7 +14,11 @@ class ArticlesController < ApplicationController
 
   # GET /articles/new
   def new
-    @article = Article.new
+    if current_user
+      respond_to do |format|
+        format.html { render :index, notice: 'ツイッターにてログイン後に投稿してください。' }
+      end
+    end
   end
 
   # GET /articles/1/edit
