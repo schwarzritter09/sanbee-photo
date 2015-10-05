@@ -21,5 +21,10 @@ test:
   database: db/test.sqlite3
 
 production:
-  <<: *default
-  database: db/production.pg
+  encoding: utf8
+  adapter: postgresql
+  port: 5432
+  username: yzgmappcmtwipt
+  host: ec2-54-197-241-24.compute-1.amazonaws.com
+  database: ddfj98d9f2uj29
+  password: z90dOzIwFyhzFzmlaPp2xaKeys
