@@ -1,0 +1,11 @@
+<p id="notice"><%= notice %></p>
+
+<h1>検索</h1>
+
+<div class="search">
+<%= form_tag articles_path, :method => 'get' do %>
+  譲:<%= collection_select 'article_search', 'member_id', Member.all, :id, :name, :include_blank => true %> <br>
+  求:<%= collection_select 'article_search', 'requestmember_id', Member.all, :id, :name, :include_blank => true %> <br>
+  <%= submit_tag '検索する' %>
+<% end %>
+</div>
