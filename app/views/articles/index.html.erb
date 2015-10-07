@@ -1,17 +1,5 @@
 <p id="notice"><%= notice %></p>
 
-<% if user_signed_in? %>
-<%= link_to '新しく投稿する', new_article_path %>
-<% end %>
-
-<h1>検索</h1>
-
-<%= form_tag articles_path, :method => 'get' do %>
-  求:<%= collection_select 'article_search', 'member_id', Member.all, :id, :name, :include_blank => true %> <br>
-  譲:<%= collection_select 'article_search', 'requestmember_id', Member.all, :id, :name, :include_blank => true %> <br>
-  <%= submit_tag '検索する' %>
-<% end %>
-
 <h1>投稿一覧</h1>
 
 <table>
