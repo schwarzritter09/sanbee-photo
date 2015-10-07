@@ -14,7 +14,9 @@ class ArticlesController < ApplicationController
 
   # GET /articles/new
   def new
-    if current_user
+    if user_signed_in?
+      @article = Article.new
+    else
       respond_to do |format|
         format.html { render :index, notice: 'ツイッターにてログイン後に投稿してください。' }
       end

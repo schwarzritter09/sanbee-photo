@@ -18973,3 +18973,971 @@ Processing by ArticlesController#show as HTML
   [1m[36mUser Load (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
   Rendered articles/show.html.erb within layouts/application (11.0ms)
 Completed 200 OK in 182ms (Views: 180.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2015-10-07 17:48:13 +0900
+  [1m[36mActiveRecord::SchemaMigration Load (0.0ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by ArticlesController#index as HTML
+  [1m[35mUser Load (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+  [1m[36mMember Load (0.0ms)[0m  [1mSELECT "members".* FROM "members"[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "members".* FROM "members"
+  [1m[36mArticle Load (0.0ms)[0m  [1mSELECT  "articles".* FROM "articles"  ORDER BY "articles"."id" ASC LIMIT 10 OFFSET 0[0m
+  [1m[35mUser Load (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mMember Load (0.0ms)[0m  [1mSELECT  "members".* FROM "members" WHERE "members"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mMember Load (0.0ms)[0m  SELECT "members".* FROM "members" INNER JOIN "requestmembers" ON "members"."id" = "requestmembers"."member_id" WHERE "requestmembers"."article_id" = ?  [["article_id", 1]]
+  [1m[36mCACHE (1.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "members".* FROM "members" WHERE "members"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mMember Load (0.0ms)[0m  [1mSELECT "members".* FROM "members" INNER JOIN "requestmembers" ON "members"."id" = "requestmembers"."member_id" WHERE "requestmembers"."article_id" = ?[0m  [["article_id", 2]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mMember Load (1.0ms)[0m  [1mSELECT  "members".* FROM "members" WHERE "members"."id" = ? LIMIT 1[0m  [["id", 2]]
+  [1m[35mMember Load (1.0ms)[0m  SELECT "members".* FROM "members" INNER JOIN "requestmembers" ON "members"."id" = "requestmembers"."member_id" WHERE "requestmembers"."article_id" = ?  [["article_id", 3]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "members".* FROM "members" WHERE "members"."id" = ? LIMIT 1  [["id", 2]]
+  [1m[36mMember Load (0.0ms)[0m  [1mSELECT "members".* FROM "members" INNER JOIN "requestmembers" ON "members"."id" = "requestmembers"."member_id" WHERE "requestmembers"."article_id" = ?[0m  [["article_id", 4]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "members".* FROM "members" WHERE "members"."id" = ? LIMIT 1[0m  [["id", 2]]
+  [1m[35mMember Load (0.0ms)[0m  SELECT "members".* FROM "members" INNER JOIN "requestmembers" ON "members"."id" = "requestmembers"."member_id" WHERE "requestmembers"."article_id" = ?  [["article_id", 5]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "members".* FROM "members" WHERE "members"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mMember Load (0.0ms)[0m  [1mSELECT "members".* FROM "members" INNER JOIN "requestmembers" ON "members"."id" = "requestmembers"."member_id" WHERE "requestmembers"."article_id" = ?[0m  [["article_id", 6]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "members".* FROM "members" WHERE "members"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mMember Load (1.0ms)[0m  SELECT "members".* FROM "members" INNER JOIN "requestmembers" ON "members"."id" = "requestmembers"."member_id" WHERE "requestmembers"."article_id" = ?  [["article_id", 7]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "members".* FROM "members" WHERE "members"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mMember Load (0.0ms)[0m  [1mSELECT "members".* FROM "members" INNER JOIN "requestmembers" ON "members"."id" = "requestmembers"."member_id" WHERE "requestmembers"."article_id" = ?[0m  [["article_id", 8]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mCACHE (1.0ms)[0m  [1mSELECT  "members".* FROM "members" WHERE "members"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mMember Load (1.0ms)[0m  SELECT "members".* FROM "members" INNER JOIN "requestmembers" ON "members"."id" = "requestmembers"."member_id" WHERE "requestmembers"."article_id" = ?  [["article_id", 9]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "members".* FROM "members" WHERE "members"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mMember Load (0.0ms)[0m  [1mSELECT "members".* FROM "members" INNER JOIN "requestmembers" ON "members"."id" = "requestmembers"."member_id" WHERE "requestmembers"."article_id" = ?[0m  [["article_id", 10]]
+  [1m[35m (0.0ms)[0m  SELECT COUNT(*) FROM "articles"
+  Rendered articles/index.html.erb within layouts/application (194.0ms)
+Completed 200 OK in 583ms (Views: 531.0ms | ActiveRecord: 7.0ms)
+
+
+Started GET "/assets/articles.self-ab5245ff89858fff42f132dc9e7636af5282b91259c78dbd89acf7c8a00e04b6.css?body=1" for ::1 at 2015-10-07 17:48:14 +0900
+
+
+Started GET "/assets/home.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-10-07 17:48:14 +0900
+
+
+Started GET "/assets/members.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-10-07 17:48:14 +0900
+
+
+Started GET "/assets/units.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-10-07 17:48:14 +0900
+
+
+Started GET "/assets/requestmembers.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-10-07 17:48:14 +0900
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for ::1 at 2015-10-07 17:48:14 +0900
+
+
+Started GET "/assets/scaffolds.self-bbb77a1802a31c020ceaba023240547923f3056f9076362cd6ef876ff0fce9e6.css?body=1" for ::1 at 2015-10-07 17:48:14 +0900
+
+
+Started GET "/assets/searcharticles.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-10-07 17:48:14 +0900
+
+
+Started GET "/assets/jquery.self-a714331225dda820228db323939889f149aec0127aeb06255646b616ba1ca419.js?body=1" for ::1 at 2015-10-07 17:48:14 +0900
+
+
+Started GET "/assets/jquery_ujs.self-d456baa54c1fa6be2ec3711f0a72ddf7a5b2f34a6b4f515f33767d6207b7d4b3.js?body=1" for ::1 at 2015-10-07 17:48:14 +0900
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2015-10-07 17:48:14 +0900
+
+
+Started GET "/assets/articles.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-10-07 17:48:14 +0900
+
+
+Started GET "/assets/home.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-10-07 17:48:14 +0900
+
+
+Started GET "/assets/members.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-10-07 17:48:14 +0900
+
+
+Started GET "/assets/requestmembers.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-10-07 17:48:14 +0900
+
+
+Started GET "/assets/searcharticles.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-10-07 17:48:14 +0900
+
+
+Started GET "/assets/units.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-10-07 17:48:14 +0900
+
+
+Started GET "/assets/jquery_nested_form.self-d38045d10ebdd28aac44152cb451796232091957b86b47bedad1ab171a3a12cd.js?body=1" for ::1 at 2015-10-07 17:48:14 +0900
+
+
+Started GET "/assets/application.self-f8806224e027f3e3f0138ea9ce99319e298dfdb323304d1f1be6eae8e8c74724.js?body=1" for ::1 at 2015-10-07 17:48:14 +0900
+
+
+Started GET "/articles/new" for ::1 at 2015-10-07 17:48:18 +0900
+Processing by ArticlesController#new as HTML
+  [1m[36mUser Load (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+  [1m[35mMember Load (0.0ms)[0m  SELECT "members".* FROM "members"
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "members".* FROM "members"[0m
+  Rendered articles/index.html.erb within layouts/application (10.0ms)
+Completed 500 Internal Server Error in 18ms (ActiveRecord: 0.0ms)
+
+ActionView::Template::Error (undefined method `each' for nil:NilClass):
+    26:   </thead>
+    27: 
+    28:   <tbody>
+    29:     <% @articles.each do |article| %>
+    30:       <tr class="<%= article.close_flag ? 'closed' : 'not_close' %> <%= cycle("even", "odd") %>">
+    31:         <td><%= article.message %></td>
+    32:         <td><%= link_to article.user.username, "http://twitter.com/#{article.user.username}" %></td>
+  app/views/articles/index.html.erb:29:in `_app_views_articles_index_html_erb__1262822327_73160140'
+  app/controllers/articles_controller.rb:19:in `block (2 levels) in new'
+  app/controllers/articles_controller.rb:18:in `new'
+
+
+  Rendered c:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_source.erb (15.6ms)
+  Rendered c:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (0.0ms)
+  Rendered c:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.0ms)
+  Rendered c:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (37.2ms)
+  Rendered c:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/web-console-2.2.1/lib/web_console/templates/_markup.html.erb (0.0ms)
+  Rendered c:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/web-console-2.2.1/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.0ms)
+  Rendered c:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/web-console-2.2.1/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.0ms)
+  Rendered c:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/web-console-2.2.1/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.0ms)
+  Rendered c:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/web-console-2.2.1/lib/web_console/templates/console.js.erb within layouts/javascript (15.6ms)
+  Rendered c:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/web-console-2.2.1/lib/web_console/templates/main.js.erb within layouts/javascript (0.0ms)
+  Rendered c:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/web-console-2.2.1/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.0ms)
+  Rendered c:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/web-console-2.2.1/lib/web_console/templates/index.html.erb (48.2ms)
+
+
+Started GET "/articles/new" for ::1 at 2015-10-07 17:48:18 +0900
+Processing by ArticlesController#new as HTML
+  [1m[35mUser Load (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+  [1m[36mMember Load (0.0ms)[0m  [1mSELECT "members".* FROM "members"[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "members".* FROM "members"
+  Rendered articles/index.html.erb within layouts/application (5.0ms)
+Completed 500 Internal Server Error in 11ms (ActiveRecord: 0.0ms)
+
+ActionView::Template::Error (undefined method `each' for nil:NilClass):
+    26:   </thead>
+    27: 
+    28:   <tbody>
+    29:     <% @articles.each do |article| %>
+    30:       <tr class="<%= article.close_flag ? 'closed' : 'not_close' %> <%= cycle("even", "odd") %>">
+    31:         <td><%= article.message %></td>
+    32:         <td><%= link_to article.user.username, "http://twitter.com/#{article.user.username}" %></td>
+  app/views/articles/index.html.erb:29:in `_app_views_articles_index_html_erb__1262822327_73160140'
+  app/controllers/articles_controller.rb:19:in `block (2 levels) in new'
+  app/controllers/articles_controller.rb:18:in `new'
+
+
+  Rendered c:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_source.erb (1.0ms)
+  Rendered c:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.0ms)
+  Rendered c:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.0ms)
+  Rendered c:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (28.0ms)
+  Rendered c:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/web-console-2.2.1/lib/web_console/templates/_markup.html.erb (1.0ms)
+  Rendered c:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/web-console-2.2.1/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.0ms)
+  Rendered c:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/web-console-2.2.1/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.0ms)
+  Rendered c:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/web-console-2.2.1/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.0ms)
+  Rendered c:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/web-console-2.2.1/lib/web_console/templates/console.js.erb within layouts/javascript (32.0ms)
+  Rendered c:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/web-console-2.2.1/lib/web_console/templates/main.js.erb within layouts/javascript (0.0ms)
+  Rendered c:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/web-console-2.2.1/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.0ms)
+  Rendered c:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/web-console-2.2.1/lib/web_console/templates/index.html.erb (63.0ms)
+
+
+Started GET "/articles/new" for ::1 at 2015-10-07 17:49:26 +0900
+Processing by ArticlesController#new as HTML
+  [1m[36mUser Load (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+  [1m[35mMember Load (0.0ms)[0m  SELECT "members".* FROM "members"
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "members".* FROM "members"[0m
+  Rendered articles/index.html.erb within layouts/application (18.0ms)
+Completed 500 Internal Server Error in 24ms (ActiveRecord: 1.0ms)
+
+ActionView::Template::Error (undefined method `each' for nil:NilClass):
+    26:   </thead>
+    27: 
+    28:   <tbody>
+    29:     <% @articles.each do |article| %>
+    30:       <tr class="<%= article.close_flag ? 'closed' : 'not_close' %> <%= cycle("even", "odd") %>">
+    31:         <td><%= article.message %></td>
+    32:         <td><%= link_to article.user.username, "http://twitter.com/#{article.user.username}" %></td>
+  app/views/articles/index.html.erb:29:in `_app_views_articles_index_html_erb__1262822327_73160140'
+  app/controllers/articles_controller.rb:18:in `block (2 levels) in new'
+  app/controllers/articles_controller.rb:17:in `new'
+
+
+  Rendered c:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_source.erb (1.0ms)
+  Rendered c:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.0ms)
+  Rendered c:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.0ms)
+  Rendered c:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (27.0ms)
+  Rendered c:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/web-console-2.2.1/lib/web_console/templates/_markup.html.erb (0.0ms)
+  Rendered c:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/web-console-2.2.1/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (1.0ms)
+  Rendered c:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/web-console-2.2.1/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.0ms)
+  Rendered c:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/web-console-2.2.1/lib/web_console/templates/style.css.erb within layouts/inlined_string (1.0ms)
+  Rendered c:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/web-console-2.2.1/lib/web_console/templates/console.js.erb within layouts/javascript (29.0ms)
+  Rendered c:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/web-console-2.2.1/lib/web_console/templates/main.js.erb within layouts/javascript (1.0ms)
+  Rendered c:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/web-console-2.2.1/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.0ms)
+  Rendered c:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/web-console-2.2.1/lib/web_console/templates/index.html.erb (59.0ms)
+
+
+Started GET "/articles/new" for ::1 at 2015-10-07 17:49:27 +0900
+Processing by ArticlesController#new as HTML
+  [1m[35mUser Load (1.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+  [1m[36mMember Load (0.0ms)[0m  [1mSELECT "members".* FROM "members"[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "members".* FROM "members"
+  Rendered articles/index.html.erb within layouts/application (5.0ms)
+Completed 500 Internal Server Error in 12ms (ActiveRecord: 1.0ms)
+
+ActionView::Template::Error (undefined method `each' for nil:NilClass):
+    26:   </thead>
+    27: 
+    28:   <tbody>
+    29:     <% @articles.each do |article| %>
+    30:       <tr class="<%= article.close_flag ? 'closed' : 'not_close' %> <%= cycle("even", "odd") %>">
+    31:         <td><%= article.message %></td>
+    32:         <td><%= link_to article.user.username, "http://twitter.com/#{article.user.username}" %></td>
+  app/views/articles/index.html.erb:29:in `_app_views_articles_index_html_erb__1262822327_73160140'
+  app/controllers/articles_controller.rb:18:in `block (2 levels) in new'
+  app/controllers/articles_controller.rb:17:in `new'
+
+
+  Rendered c:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_source.erb (1.0ms)
+  Rendered c:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.0ms)
+  Rendered c:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.0ms)
+  Rendered c:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (29.0ms)
+  Rendered c:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/web-console-2.2.1/lib/web_console/templates/_markup.html.erb (1.0ms)
+  Rendered c:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/web-console-2.2.1/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.0ms)
+  Rendered c:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/web-console-2.2.1/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (1.0ms)
+  Rendered c:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/web-console-2.2.1/lib/web_console/templates/style.css.erb within layouts/inlined_string (1.0ms)
+  Rendered c:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/web-console-2.2.1/lib/web_console/templates/console.js.erb within layouts/javascript (32.0ms)
+  Rendered c:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/web-console-2.2.1/lib/web_console/templates/main.js.erb within layouts/javascript (0.0ms)
+  Rendered c:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/web-console-2.2.1/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.0ms)
+  Rendered c:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/web-console-2.2.1/lib/web_console/templates/index.html.erb (64.0ms)
+
+
+Started POST "/articles/console/repl_sessions/b1a9f6388da088f59da0180efc05ff06/trace" for ::1 at 2015-10-07 17:49:52 +0900
+
+
+Started POST "/articles/console/repl_sessions/b1a9f6388da088f59da0180efc05ff06/trace" for ::1 at 2015-10-07 17:49:54 +0900
+
+
+Started POST "/articles/console/repl_sessions/b1a9f6388da088f59da0180efc05ff06/trace" for ::1 at 2015-10-07 17:49:55 +0900
+
+
+Started GET "/articles/new" for ::1 at 2015-10-07 17:50:29 +0900
+Processing by ArticlesController#new as HTML
+  [1m[36mUser Load (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+  [1m[35mMember Load (0.0ms)[0m  SELECT "members".* FROM "members"
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "members".* FROM "members"[0m
+  Rendered articles/index.html.erb within layouts/application (21.0ms)
+Completed 500 Internal Server Error in 27ms (ActiveRecord: 1.0ms)
+
+ActionView::Template::Error (undefined method `each' for nil:NilClass):
+    26:   </thead>
+    27: 
+    28:   <tbody>
+    29:     <% @articles.each do |article| %>
+    30:       <tr class="<%= article.close_flag ? 'closed' : 'not_close' %> <%= cycle("even", "odd") %>">
+    31:         <td><%= article.message %></td>
+    32:         <td><%= link_to article.user.username, "http://twitter.com/#{article.user.username}" %></td>
+  app/views/articles/index.html.erb:29:in `_app_views_articles_index_html_erb__1262822327_73160140'
+  app/controllers/articles_controller.rb:18:in `block (2 levels) in new'
+  app/controllers/articles_controller.rb:17:in `new'
+
+
+  Rendered c:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.0ms)
+  Rendered c:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (4.0ms)
+  Rendered c:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.0ms)
+  Rendered c:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (27.0ms)
+  Rendered c:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/web-console-2.2.1/lib/web_console/templates/_markup.html.erb (0.0ms)
+  Rendered c:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/web-console-2.2.1/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.0ms)
+  Rendered c:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/web-console-2.2.1/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.0ms)
+  Rendered c:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/web-console-2.2.1/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.0ms)
+  Rendered c:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/web-console-2.2.1/lib/web_console/templates/console.js.erb within layouts/javascript (26.0ms)
+  Rendered c:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/web-console-2.2.1/lib/web_console/templates/main.js.erb within layouts/javascript (1.0ms)
+  Rendered c:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/web-console-2.2.1/lib/web_console/templates/error_page.js.erb within layouts/javascript (1.0ms)
+  Rendered c:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/web-console-2.2.1/lib/web_console/templates/index.html.erb (58.0ms)
+
+
+Started GET "/articles/new" for ::1 at 2015-10-07 17:50:31 +0900
+Processing by ArticlesController#new as HTML
+  [1m[35mUser Load (1.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+  [1m[36mMember Load (0.0ms)[0m  [1mSELECT "members".* FROM "members"[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "members".* FROM "members"
+  Rendered articles/index.html.erb within layouts/application (7.0ms)
+Completed 500 Internal Server Error in 15ms (ActiveRecord: 1.0ms)
+
+ActionView::Template::Error (undefined method `each' for nil:NilClass):
+    26:   </thead>
+    27: 
+    28:   <tbody>
+    29:     <% @articles.each do |article| %>
+    30:       <tr class="<%= article.close_flag ? 'closed' : 'not_close' %> <%= cycle("even", "odd") %>">
+    31:         <td><%= article.message %></td>
+    32:         <td><%= link_to article.user.username, "http://twitter.com/#{article.user.username}" %></td>
+  app/views/articles/index.html.erb:29:in `_app_views_articles_index_html_erb__1262822327_73160140'
+  app/controllers/articles_controller.rb:18:in `block (2 levels) in new'
+  app/controllers/articles_controller.rb:17:in `new'
+
+
+  Rendered c:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_source.erb (1.0ms)
+  Rendered c:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (4.0ms)
+  Rendered c:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.0ms)
+  Rendered c:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (29.0ms)
+  Rendered c:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/web-console-2.2.1/lib/web_console/templates/_markup.html.erb (0.0ms)
+  Rendered c:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/web-console-2.2.1/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (1.0ms)
+  Rendered c:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/web-console-2.2.1/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (1.0ms)
+  Rendered c:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/web-console-2.2.1/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.0ms)
+  Rendered c:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/web-console-2.2.1/lib/web_console/templates/console.js.erb within layouts/javascript (29.0ms)
+  Rendered c:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/web-console-2.2.1/lib/web_console/templates/main.js.erb within layouts/javascript (1.0ms)
+  Rendered c:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/web-console-2.2.1/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.0ms)
+  Rendered c:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/web-console-2.2.1/lib/web_console/templates/index.html.erb (65.0ms)
+
+
+Started GET "/articles/new" for ::1 at 2015-10-07 17:50:32 +0900
+Processing by ArticlesController#new as HTML
+  [1m[36mUser Load (1.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+  [1m[35mMember Load (0.0ms)[0m  SELECT "members".* FROM "members"
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "members".* FROM "members"[0m
+  Rendered articles/index.html.erb within layouts/application (9.0ms)
+Completed 500 Internal Server Error in 20ms (ActiveRecord: 1.0ms)
+
+ActionView::Template::Error (undefined method `each' for nil:NilClass):
+    26:   </thead>
+    27: 
+    28:   <tbody>
+    29:     <% @articles.each do |article| %>
+    30:       <tr class="<%= article.close_flag ? 'closed' : 'not_close' %> <%= cycle("even", "odd") %>">
+    31:         <td><%= article.message %></td>
+    32:         <td><%= link_to article.user.username, "http://twitter.com/#{article.user.username}" %></td>
+  app/views/articles/index.html.erb:29:in `_app_views_articles_index_html_erb__1262822327_73160140'
+  app/controllers/articles_controller.rb:18:in `block (2 levels) in new'
+  app/controllers/articles_controller.rb:17:in `new'
+
+
+  Rendered c:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.0ms)
+  Rendered c:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.0ms)
+  Rendered c:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.0ms)
+  Rendered c:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (28.0ms)
+  Rendered c:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/web-console-2.2.1/lib/web_console/templates/_markup.html.erb (0.0ms)
+  Rendered c:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/web-console-2.2.1/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (1.0ms)
+  Rendered c:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/web-console-2.2.1/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (1.0ms)
+  Rendered c:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/web-console-2.2.1/lib/web_console/templates/style.css.erb within layouts/inlined_string (1.0ms)
+  Rendered c:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/web-console-2.2.1/lib/web_console/templates/console.js.erb within layouts/javascript (32.0ms)
+  Rendered c:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/web-console-2.2.1/lib/web_console/templates/main.js.erb within layouts/javascript (0.0ms)
+  Rendered c:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/web-console-2.2.1/lib/web_console/templates/error_page.js.erb within layouts/javascript (1.0ms)
+  Rendered c:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/web-console-2.2.1/lib/web_console/templates/index.html.erb (65.0ms)
+
+
+Started GET "/articles/new" for ::1 at 2015-10-07 17:50:55 +0900
+Processing by ArticlesController#new as HTML
+  [1m[35mUser Load (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+  [1m[36mMember Load (0.0ms)[0m  [1mSELECT "members".* FROM "members"[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "members".* FROM "members"
+  Rendered articles/index.html.erb within layouts/application (19.0ms)
+Completed 500 Internal Server Error in 26ms (ActiveRecord: 1.0ms)
+
+ActionView::Template::Error (undefined method `each' for nil:NilClass):
+    26:   </thead>
+    27: 
+    28:   <tbody>
+    29:     <% @articles.each do |article| %>
+    30:       <tr class="<%= article.close_flag ? 'closed' : 'not_close' %> <%= cycle("even", "odd") %>">
+    31:         <td><%= article.message %></td>
+    32:         <td><%= link_to article.user.username, "http://twitter.com/#{article.user.username}" %></td>
+  app/views/articles/index.html.erb:29:in `_app_views_articles_index_html_erb__1262822327_73160140'
+  app/controllers/articles_controller.rb:18:in `block (2 levels) in new'
+  app/controllers/articles_controller.rb:17:in `new'
+
+
+  Rendered c:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_source.erb (1.0ms)
+  Rendered c:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.0ms)
+  Rendered c:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.0ms)
+  Rendered c:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (28.0ms)
+  Rendered c:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/web-console-2.2.1/lib/web_console/templates/_markup.html.erb (0.0ms)
+  Rendered c:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/web-console-2.2.1/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.0ms)
+  Rendered c:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/web-console-2.2.1/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.0ms)
+  Rendered c:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/web-console-2.2.1/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.0ms)
+  Rendered c:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/web-console-2.2.1/lib/web_console/templates/console.js.erb within layouts/javascript (27.0ms)
+  Rendered c:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/web-console-2.2.1/lib/web_console/templates/main.js.erb within layouts/javascript (0.0ms)
+  Rendered c:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/web-console-2.2.1/lib/web_console/templates/error_page.js.erb within layouts/javascript (1.0ms)
+  Rendered c:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/web-console-2.2.1/lib/web_console/templates/index.html.erb (59.0ms)
+
+
+Started GET "/articles/" for ::1 at 2015-10-07 17:51:07 +0900
+Processing by ArticlesController#index as HTML
+  [1m[36mUser Load (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+  [1m[35mMember Load (0.0ms)[0m  SELECT "members".* FROM "members"
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "members".* FROM "members"[0m
+  [1m[35mArticle Load (0.0ms)[0m  SELECT  "articles".* FROM "articles"  ORDER BY "articles"."id" ASC LIMIT 10 OFFSET 0
+  [1m[36mUser Load (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mMember Load (0.0ms)[0m  SELECT  "members".* FROM "members" WHERE "members"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mMember Load (0.0ms)[0m  [1mSELECT "members".* FROM "members" INNER JOIN "requestmembers" ON "members"."id" = "requestmembers"."member_id" WHERE "requestmembers"."article_id" = ?[0m  [["article_id", 1]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "members".* FROM "members" WHERE "members"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mMember Load (1.0ms)[0m  SELECT "members".* FROM "members" INNER JOIN "requestmembers" ON "members"."id" = "requestmembers"."member_id" WHERE "requestmembers"."article_id" = ?  [["article_id", 2]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mMember Load (0.0ms)[0m  SELECT  "members".* FROM "members" WHERE "members"."id" = ? LIMIT 1  [["id", 2]]
+  [1m[36mMember Load (0.0ms)[0m  [1mSELECT "members".* FROM "members" INNER JOIN "requestmembers" ON "members"."id" = "requestmembers"."member_id" WHERE "requestmembers"."article_id" = ?[0m  [["article_id", 3]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "members".* FROM "members" WHERE "members"."id" = ? LIMIT 1[0m  [["id", 2]]
+  [1m[35mMember Load (0.0ms)[0m  SELECT "members".* FROM "members" INNER JOIN "requestmembers" ON "members"."id" = "requestmembers"."member_id" WHERE "requestmembers"."article_id" = ?  [["article_id", 4]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "members".* FROM "members" WHERE "members"."id" = ? LIMIT 1  [["id", 2]]
+  [1m[36mMember Load (0.0ms)[0m  [1mSELECT "members".* FROM "members" INNER JOIN "requestmembers" ON "members"."id" = "requestmembers"."member_id" WHERE "requestmembers"."article_id" = ?[0m  [["article_id", 5]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "members".* FROM "members" WHERE "members"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mMember Load (0.0ms)[0m  SELECT "members".* FROM "members" INNER JOIN "requestmembers" ON "members"."id" = "requestmembers"."member_id" WHERE "requestmembers"."article_id" = ?  [["article_id", 6]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "members".* FROM "members" WHERE "members"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mMember Load (0.0ms)[0m  [1mSELECT "members".* FROM "members" INNER JOIN "requestmembers" ON "members"."id" = "requestmembers"."member_id" WHERE "requestmembers"."article_id" = ?[0m  [["article_id", 7]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "members".* FROM "members" WHERE "members"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mMember Load (0.0ms)[0m  SELECT "members".* FROM "members" INNER JOIN "requestmembers" ON "members"."id" = "requestmembers"."member_id" WHERE "requestmembers"."article_id" = ?  [["article_id", 8]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "members".* FROM "members" WHERE "members"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mMember Load (0.0ms)[0m  [1mSELECT "members".* FROM "members" INNER JOIN "requestmembers" ON "members"."id" = "requestmembers"."member_id" WHERE "requestmembers"."article_id" = ?[0m  [["article_id", 9]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "members".* FROM "members" WHERE "members"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mMember Load (0.0ms)[0m  SELECT "members".* FROM "members" INNER JOIN "requestmembers" ON "members"."id" = "requestmembers"."member_id" WHERE "requestmembers"."article_id" = ?  [["article_id", 10]]
+  [1m[36m (0.0ms)[0m  [1mSELECT COUNT(*) FROM "articles"[0m
+  Rendered articles/index.html.erb within layouts/application (72.0ms)
+Completed 200 OK in 265ms (Views: 232.0ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/assets/members.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-10-07 17:51:08 +0900
+
+
+Started GET "/assets/home.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-10-07 17:51:08 +0900
+
+
+Started GET "/assets/searcharticles.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-10-07 17:51:08 +0900
+
+
+Started GET "/assets/scaffolds.self-bbb77a1802a31c020ceaba023240547923f3056f9076362cd6ef876ff0fce9e6.css?body=1" for ::1 at 2015-10-07 17:51:08 +0900
+
+
+Started GET "/assets/requestmembers.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-10-07 17:51:08 +0900
+
+
+Started GET "/assets/articles.self-ab5245ff89858fff42f132dc9e7636af5282b91259c78dbd89acf7c8a00e04b6.css?body=1" for ::1 at 2015-10-07 17:51:08 +0900
+
+
+Started GET "/assets/units.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-10-07 17:51:08 +0900
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for ::1 at 2015-10-07 17:51:08 +0900
+
+
+Started GET "/assets/jquery.self-a714331225dda820228db323939889f149aec0127aeb06255646b616ba1ca419.js?body=1" for ::1 at 2015-10-07 17:51:08 +0900
+
+
+Started GET "/assets/jquery_ujs.self-d456baa54c1fa6be2ec3711f0a72ddf7a5b2f34a6b4f515f33767d6207b7d4b3.js?body=1" for ::1 at 2015-10-07 17:51:08 +0900
+
+
+Started GET "/assets/home.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-10-07 17:51:08 +0900
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2015-10-07 17:51:08 +0900
+
+
+Started GET "/assets/articles.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-10-07 17:51:08 +0900
+
+
+Started GET "/assets/members.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-10-07 17:51:08 +0900
+
+
+Started GET "/assets/requestmembers.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-10-07 17:51:08 +0900
+
+
+Started GET "/assets/searcharticles.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-10-07 17:51:08 +0900
+
+
+Started GET "/assets/units.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-10-07 17:51:08 +0900
+
+
+Started GET "/assets/jquery_nested_form.self-d38045d10ebdd28aac44152cb451796232091957b86b47bedad1ab171a3a12cd.js?body=1" for ::1 at 2015-10-07 17:51:08 +0900
+
+
+Started GET "/assets/application.self-f8806224e027f3e3f0138ea9ce99319e298dfdb323304d1f1be6eae8e8c74724.js?body=1" for ::1 at 2015-10-07 17:51:08 +0900
+
+
+Started GET "/articles/new" for ::1 at 2015-10-07 17:51:13 +0900
+Processing by ArticlesController#new as HTML
+  [1m[35mUser Load (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+  [1m[36mMember Load (0.0ms)[0m  [1mSELECT "members".* FROM "members"[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "members".* FROM "members"
+  Rendered articles/index.html.erb within layouts/application (7.0ms)
+Completed 500 Internal Server Error in 12ms (ActiveRecord: 0.0ms)
+
+ActionView::Template::Error (undefined method `each' for nil:NilClass):
+    26:   </thead>
+    27: 
+    28:   <tbody>
+    29:     <% @articles.each do |article| %>
+    30:       <tr class="<%= article.close_flag ? 'closed' : 'not_close' %> <%= cycle("even", "odd") %>">
+    31:         <td><%= article.message %></td>
+    32:         <td><%= link_to article.user.username, "http://twitter.com/#{article.user.username}" %></td>
+  app/views/articles/index.html.erb:29:in `_app_views_articles_index_html_erb__1262822327_73160140'
+  app/controllers/articles_controller.rb:18:in `block (2 levels) in new'
+  app/controllers/articles_controller.rb:17:in `new'
+
+
+  Rendered c:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.0ms)
+  Rendered c:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (0.0ms)
+  Rendered c:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (15.6ms)
+  Rendered c:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (31.2ms)
+  Rendered c:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/web-console-2.2.1/lib/web_console/templates/_markup.html.erb (0.0ms)
+  Rendered c:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/web-console-2.2.1/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.0ms)
+  Rendered c:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/web-console-2.2.1/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.0ms)
+  Rendered c:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/web-console-2.2.1/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.0ms)
+  Rendered c:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/web-console-2.2.1/lib/web_console/templates/console.js.erb within layouts/javascript (31.2ms)
+  Rendered c:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/web-console-2.2.1/lib/web_console/templates/main.js.erb within layouts/javascript (0.0ms)
+  Rendered c:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/web-console-2.2.1/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.0ms)
+  Rendered c:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/web-console-2.2.1/lib/web_console/templates/index.html.erb (62.4ms)
+
+
+Started GET "/articles/new" for ::1 at 2015-10-07 17:51:14 +0900
+Processing by ArticlesController#new as HTML
+  [1m[36mUser Load (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+  [1m[35mMember Load (0.0ms)[0m  SELECT "members".* FROM "members"
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "members".* FROM "members"[0m
+  Rendered articles/index.html.erb within layouts/application (9.0ms)
+Completed 500 Internal Server Error in 18ms (ActiveRecord: 0.0ms)
+
+ActionView::Template::Error (undefined method `each' for nil:NilClass):
+    26:   </thead>
+    27: 
+    28:   <tbody>
+    29:     <% @articles.each do |article| %>
+    30:       <tr class="<%= article.close_flag ? 'closed' : 'not_close' %> <%= cycle("even", "odd") %>">
+    31:         <td><%= article.message %></td>
+    32:         <td><%= link_to article.user.username, "http://twitter.com/#{article.user.username}" %></td>
+  app/views/articles/index.html.erb:29:in `_app_views_articles_index_html_erb__1262822327_73160140'
+  app/controllers/articles_controller.rb:18:in `block (2 levels) in new'
+  app/controllers/articles_controller.rb:17:in `new'
+
+
+  Rendered c:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_source.erb (1.0ms)
+  Rendered c:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (6.0ms)
+  Rendered c:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.0ms)
+  Rendered c:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (37.0ms)
+  Rendered c:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/web-console-2.2.1/lib/web_console/templates/_markup.html.erb (0.0ms)
+  Rendered c:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/web-console-2.2.1/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (1.0ms)
+  Rendered c:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/web-console-2.2.1/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (1.0ms)
+  Rendered c:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/web-console-2.2.1/lib/web_console/templates/style.css.erb within layouts/inlined_string (1.0ms)
+  Rendered c:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/web-console-2.2.1/lib/web_console/templates/console.js.erb within layouts/javascript (37.0ms)
+  Rendered c:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/web-console-2.2.1/lib/web_console/templates/main.js.erb within layouts/javascript (0.0ms)
+  Rendered c:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/web-console-2.2.1/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.0ms)
+  Rendered c:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/web-console-2.2.1/lib/web_console/templates/index.html.erb (77.0ms)
+
+
+Started GET "/articles/new" for ::1 at 2015-10-07 17:51:37 +0900
+Processing by ArticlesController#new as HTML
+  Rendered articles/_form.html.erb (6.0ms)
+  Rendered articles/new.html.erb within layouts/application (10.0ms)
+Completed 500 Internal Server Error in 16ms (ActiveRecord: 0.0ms)
+
+ActionView::Template::Error (First argument in form cannot contain nil or be empty):
+    1: <%= nested_form_for(@article) do |f| %>
+    2:   <%
+    3:       @members = Member.all.map{|m| [m.name, m.id]}
+    4:   %>
+  app/views/articles/_form.html.erb:1:in `_app_views_articles__form_html_erb___293987_104436880'
+  app/views/articles/new.html.erb:3:in `_app_views_articles_new_html_erb___718488077_105427620'
+
+
+  Rendered c:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_source.erb (1.0ms)
+  Rendered c:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (4.0ms)
+  Rendered c:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.0ms)
+  Rendered c:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (29.0ms)
+  Rendered c:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/web-console-2.2.1/lib/web_console/templates/_markup.html.erb (0.0ms)
+  Rendered c:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/web-console-2.2.1/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (1.0ms)
+  Rendered c:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/web-console-2.2.1/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.0ms)
+  Rendered c:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/web-console-2.2.1/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.0ms)
+  Rendered c:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/web-console-2.2.1/lib/web_console/templates/console.js.erb within layouts/javascript (30.0ms)
+  Rendered c:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/web-console-2.2.1/lib/web_console/templates/main.js.erb within layouts/javascript (1.0ms)
+  Rendered c:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/web-console-2.2.1/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.0ms)
+  Rendered c:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/web-console-2.2.1/lib/web_console/templates/index.html.erb (116.0ms)
+
+
+Started GET "/" for ::1 at 2015-10-07 17:51:45 +0900
+Processing by ArticlesController#index as HTML
+  [1m[35mUser Load (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+  [1m[36mMember Load (0.0ms)[0m  [1mSELECT "members".* FROM "members"[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "members".* FROM "members"
+  [1m[36mArticle Load (0.0ms)[0m  [1mSELECT  "articles".* FROM "articles"  ORDER BY "articles"."id" ASC LIMIT 10 OFFSET 0[0m
+  [1m[35mUser Load (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mMember Load (1.0ms)[0m  [1mSELECT  "members".* FROM "members" WHERE "members"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mMember Load (0.0ms)[0m  SELECT "members".* FROM "members" INNER JOIN "requestmembers" ON "members"."id" = "requestmembers"."member_id" WHERE "requestmembers"."article_id" = ?  [["article_id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "members".* FROM "members" WHERE "members"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mMember Load (0.0ms)[0m  [1mSELECT "members".* FROM "members" INNER JOIN "requestmembers" ON "members"."id" = "requestmembers"."member_id" WHERE "requestmembers"."article_id" = ?[0m  [["article_id", 2]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mMember Load (1.0ms)[0m  [1mSELECT  "members".* FROM "members" WHERE "members"."id" = ? LIMIT 1[0m  [["id", 2]]
+  [1m[35mMember Load (1.0ms)[0m  SELECT "members".* FROM "members" INNER JOIN "requestmembers" ON "members"."id" = "requestmembers"."member_id" WHERE "requestmembers"."article_id" = ?  [["article_id", 3]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "members".* FROM "members" WHERE "members"."id" = ? LIMIT 1  [["id", 2]]
+  [1m[36mMember Load (0.0ms)[0m  [1mSELECT "members".* FROM "members" INNER JOIN "requestmembers" ON "members"."id" = "requestmembers"."member_id" WHERE "requestmembers"."article_id" = ?[0m  [["article_id", 4]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "members".* FROM "members" WHERE "members"."id" = ? LIMIT 1[0m  [["id", 2]]
+  [1m[35mMember Load (0.0ms)[0m  SELECT "members".* FROM "members" INNER JOIN "requestmembers" ON "members"."id" = "requestmembers"."member_id" WHERE "requestmembers"."article_id" = ?  [["article_id", 5]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "members".* FROM "members" WHERE "members"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mMember Load (0.0ms)[0m  [1mSELECT "members".* FROM "members" INNER JOIN "requestmembers" ON "members"."id" = "requestmembers"."member_id" WHERE "requestmembers"."article_id" = ?[0m  [["article_id", 6]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "members".* FROM "members" WHERE "members"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mMember Load (0.0ms)[0m  SELECT "members".* FROM "members" INNER JOIN "requestmembers" ON "members"."id" = "requestmembers"."member_id" WHERE "requestmembers"."article_id" = ?  [["article_id", 7]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "members".* FROM "members" WHERE "members"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mMember Load (0.0ms)[0m  [1mSELECT "members".* FROM "members" INNER JOIN "requestmembers" ON "members"."id" = "requestmembers"."member_id" WHERE "requestmembers"."article_id" = ?[0m  [["article_id", 8]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "members".* FROM "members" WHERE "members"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mMember Load (1.0ms)[0m  SELECT "members".* FROM "members" INNER JOIN "requestmembers" ON "members"."id" = "requestmembers"."member_id" WHERE "requestmembers"."article_id" = ?  [["article_id", 9]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "members".* FROM "members" WHERE "members"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mMember Load (0.0ms)[0m  [1mSELECT "members".* FROM "members" INNER JOIN "requestmembers" ON "members"."id" = "requestmembers"."member_id" WHERE "requestmembers"."article_id" = ?[0m  [["article_id", 10]]
+  [1m[35m (0.0ms)[0m  SELECT COUNT(*) FROM "articles"
+  Rendered articles/index.html.erb within layouts/application (84.0ms)
+Completed 200 OK in 262ms (Views: 231.0ms | ActiveRecord: 4.0ms)
+
+
+Started GET "/assets/home.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-10-07 17:51:45 +0900
+
+
+Started GET "/assets/scaffolds.self-bbb77a1802a31c020ceaba023240547923f3056f9076362cd6ef876ff0fce9e6.css?body=1" for ::1 at 2015-10-07 17:51:45 +0900
+
+
+Started GET "/assets/members.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-10-07 17:51:45 +0900
+
+
+Started GET "/assets/searcharticles.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-10-07 17:51:45 +0900
+
+
+Started GET "/assets/requestmembers.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-10-07 17:51:45 +0900
+
+
+Started GET "/assets/articles.self-ab5245ff89858fff42f132dc9e7636af5282b91259c78dbd89acf7c8a00e04b6.css?body=1" for ::1 at 2015-10-07 17:51:45 +0900
+
+
+Started GET "/assets/units.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-10-07 17:51:45 +0900
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for ::1 at 2015-10-07 17:51:45 +0900
+
+
+Started GET "/assets/jquery.self-a714331225dda820228db323939889f149aec0127aeb06255646b616ba1ca419.js?body=1" for ::1 at 2015-10-07 17:51:45 +0900
+
+
+Started GET "/assets/jquery_ujs.self-d456baa54c1fa6be2ec3711f0a72ddf7a5b2f34a6b4f515f33767d6207b7d4b3.js?body=1" for ::1 at 2015-10-07 17:51:45 +0900
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2015-10-07 17:51:45 +0900
+
+
+Started GET "/assets/articles.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-10-07 17:51:45 +0900
+
+
+Started GET "/assets/home.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-10-07 17:51:45 +0900
+
+
+Started GET "/assets/members.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-10-07 17:51:45 +0900
+
+
+Started GET "/assets/requestmembers.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-10-07 17:51:45 +0900
+
+
+Started GET "/assets/searcharticles.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-10-07 17:51:45 +0900
+
+
+Started GET "/assets/units.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-10-07 17:51:45 +0900
+
+
+Started GET "/assets/jquery_nested_form.self-d38045d10ebdd28aac44152cb451796232091957b86b47bedad1ab171a3a12cd.js?body=1" for ::1 at 2015-10-07 17:51:45 +0900
+
+
+Started GET "/assets/application.self-f8806224e027f3e3f0138ea9ce99319e298dfdb323304d1f1be6eae8e8c74724.js?body=1" for ::1 at 2015-10-07 17:51:45 +0900
+
+
+Started GET "/sign_out" for ::1 at 2015-10-07 17:51:48 +0900
+Processing by Devise::SessionsController#destroy as HTML
+  [1m[36mUser Load (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+Redirected to http://localhost:3000/
+Completed 302 Found in 5ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2015-10-07 17:51:48 +0900
+Processing by ArticlesController#index as HTML
+  [1m[35mMember Load (0.0ms)[0m  SELECT "members".* FROM "members"
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "members".* FROM "members"[0m
+  [1m[35mArticle Load (1.0ms)[0m  SELECT  "articles".* FROM "articles"  ORDER BY "articles"."id" ASC LIMIT 10 OFFSET 0
+  [1m[36mUser Load (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mMember Load (0.0ms)[0m  SELECT  "members".* FROM "members" WHERE "members"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mMember Load (0.0ms)[0m  [1mSELECT "members".* FROM "members" INNER JOIN "requestmembers" ON "members"."id" = "requestmembers"."member_id" WHERE "requestmembers"."article_id" = ?[0m  [["article_id", 1]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "members".* FROM "members" WHERE "members"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mMember Load (0.0ms)[0m  SELECT "members".* FROM "members" INNER JOIN "requestmembers" ON "members"."id" = "requestmembers"."member_id" WHERE "requestmembers"."article_id" = ?  [["article_id", 2]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mMember Load (0.0ms)[0m  SELECT  "members".* FROM "members" WHERE "members"."id" = ? LIMIT 1  [["id", 2]]
+  [1m[36mMember Load (0.0ms)[0m  [1mSELECT "members".* FROM "members" INNER JOIN "requestmembers" ON "members"."id" = "requestmembers"."member_id" WHERE "requestmembers"."article_id" = ?[0m  [["article_id", 3]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "members".* FROM "members" WHERE "members"."id" = ? LIMIT 1[0m  [["id", 2]]
+  [1m[35mMember Load (0.0ms)[0m  SELECT "members".* FROM "members" INNER JOIN "requestmembers" ON "members"."id" = "requestmembers"."member_id" WHERE "requestmembers"."article_id" = ?  [["article_id", 4]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "members".* FROM "members" WHERE "members"."id" = ? LIMIT 1  [["id", 2]]
+  [1m[36mMember Load (0.0ms)[0m  [1mSELECT "members".* FROM "members" INNER JOIN "requestmembers" ON "members"."id" = "requestmembers"."member_id" WHERE "requestmembers"."article_id" = ?[0m  [["article_id", 5]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "members".* FROM "members" WHERE "members"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mMember Load (0.0ms)[0m  SELECT "members".* FROM "members" INNER JOIN "requestmembers" ON "members"."id" = "requestmembers"."member_id" WHERE "requestmembers"."article_id" = ?  [["article_id", 6]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "members".* FROM "members" WHERE "members"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mMember Load (0.0ms)[0m  [1mSELECT "members".* FROM "members" INNER JOIN "requestmembers" ON "members"."id" = "requestmembers"."member_id" WHERE "requestmembers"."article_id" = ?[0m  [["article_id", 7]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "members".* FROM "members" WHERE "members"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mMember Load (0.0ms)[0m  SELECT "members".* FROM "members" INNER JOIN "requestmembers" ON "members"."id" = "requestmembers"."member_id" WHERE "requestmembers"."article_id" = ?  [["article_id", 8]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "members".* FROM "members" WHERE "members"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mMember Load (0.0ms)[0m  [1mSELECT "members".* FROM "members" INNER JOIN "requestmembers" ON "members"."id" = "requestmembers"."member_id" WHERE "requestmembers"."article_id" = ?[0m  [["article_id", 9]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "members".* FROM "members" WHERE "members"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mMember Load (0.0ms)[0m  SELECT "members".* FROM "members" INNER JOIN "requestmembers" ON "members"."id" = "requestmembers"."member_id" WHERE "requestmembers"."article_id" = ?  [["article_id", 10]]
+  [1m[36m (0.0ms)[0m  [1mSELECT COUNT(*) FROM "articles"[0m
+  Rendered articles/index.html.erb within layouts/application (35.2ms)
+Completed 200 OK in 191ms (Views: 190.4ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/users/auth/twitter" for ::1 at 2015-10-07 17:51:49 +0900
+
+
+Started GET "/users/auth/twitter" for ::1 at 2015-10-07 17:51:50 +0900
+
+
+Started GET "/users/auth/twitter/callback?oauth_token=HDHtxAAAAAAAhvU9AAABUEF_5is&oauth_verifier=OxXdaAVGo8JBeg5nvAVy9QeZWKK3a9Jm" for ::1 at 2015-10-07 17:51:52 +0900
+Processing by Users::OmniauthCallbacksController#twitter as HTML
+  Parameters: {"oauth_token"=>"HDHtxAAAAAAAhvU9AAABUEF_5is", "oauth_verifier"=>"OxXdaAVGo8JBeg5nvAVy9QeZWKK3a9Jm"}
+  [1m[35mUser Load (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."provider" = ? AND "users"."uid" = ? AND "users"."username" = ? LIMIT 1  [["provider", "twitter"], ["uid", "209984728"], ["username", "schwarzritter09"]]
+Redirected to http://localhost:3000/
+Completed 302 Found in 3ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2015-10-07 17:51:53 +0900
+Processing by ArticlesController#index as HTML
+  [1m[36mUser Load (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+  [1m[35mMember Load (0.0ms)[0m  SELECT "members".* FROM "members"
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "members".* FROM "members"[0m
+  [1m[35mArticle Load (1.0ms)[0m  SELECT  "articles".* FROM "articles"  ORDER BY "articles"."id" ASC LIMIT 10 OFFSET 0
+  [1m[36mUser Load (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mMember Load (1.0ms)[0m  SELECT  "members".* FROM "members" WHERE "members"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mMember Load (1.0ms)[0m  [1mSELECT "members".* FROM "members" INNER JOIN "requestmembers" ON "members"."id" = "requestmembers"."member_id" WHERE "requestmembers"."article_id" = ?[0m  [["article_id", 1]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "members".* FROM "members" WHERE "members"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mMember Load (0.0ms)[0m  SELECT "members".* FROM "members" INNER JOIN "requestmembers" ON "members"."id" = "requestmembers"."member_id" WHERE "requestmembers"."article_id" = ?  [["article_id", 2]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mMember Load (1.0ms)[0m  SELECT  "members".* FROM "members" WHERE "members"."id" = ? LIMIT 1  [["id", 2]]
+  [1m[36mMember Load (1.0ms)[0m  [1mSELECT "members".* FROM "members" INNER JOIN "requestmembers" ON "members"."id" = "requestmembers"."member_id" WHERE "requestmembers"."article_id" = ?[0m  [["article_id", 3]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "members".* FROM "members" WHERE "members"."id" = ? LIMIT 1[0m  [["id", 2]]
+  [1m[35mMember Load (0.0ms)[0m  SELECT "members".* FROM "members" INNER JOIN "requestmembers" ON "members"."id" = "requestmembers"."member_id" WHERE "requestmembers"."article_id" = ?  [["article_id", 4]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "members".* FROM "members" WHERE "members"."id" = ? LIMIT 1  [["id", 2]]
+  [1m[36mMember Load (0.0ms)[0m  [1mSELECT "members".* FROM "members" INNER JOIN "requestmembers" ON "members"."id" = "requestmembers"."member_id" WHERE "requestmembers"."article_id" = ?[0m  [["article_id", 5]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "members".* FROM "members" WHERE "members"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mMember Load (0.0ms)[0m  SELECT "members".* FROM "members" INNER JOIN "requestmembers" ON "members"."id" = "requestmembers"."member_id" WHERE "requestmembers"."article_id" = ?  [["article_id", 6]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "members".* FROM "members" WHERE "members"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mMember Load (0.0ms)[0m  [1mSELECT "members".* FROM "members" INNER JOIN "requestmembers" ON "members"."id" = "requestmembers"."member_id" WHERE "requestmembers"."article_id" = ?[0m  [["article_id", 7]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "members".* FROM "members" WHERE "members"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mMember Load (0.0ms)[0m  SELECT "members".* FROM "members" INNER JOIN "requestmembers" ON "members"."id" = "requestmembers"."member_id" WHERE "requestmembers"."article_id" = ?  [["article_id", 8]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "members".* FROM "members" WHERE "members"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mMember Load (0.0ms)[0m  [1mSELECT "members".* FROM "members" INNER JOIN "requestmembers" ON "members"."id" = "requestmembers"."member_id" WHERE "requestmembers"."article_id" = ?[0m  [["article_id", 9]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "members".* FROM "members" WHERE "members"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mMember Load (0.0ms)[0m  SELECT "members".* FROM "members" INNER JOIN "requestmembers" ON "members"."id" = "requestmembers"."member_id" WHERE "requestmembers"."article_id" = ?  [["article_id", 10]]
+  [1m[36m (1.0ms)[0m  [1mSELECT COUNT(*) FROM "articles"[0m
+  Rendered articles/index.html.erb within layouts/application (109.0ms)
+Completed 200 OK in 310ms (Views: 300.0ms | ActiveRecord: 6.0ms)
+
+
+Started GET "/assets/scaffolds.self-bbb77a1802a31c020ceaba023240547923f3056f9076362cd6ef876ff0fce9e6.css?body=1" for ::1 at 2015-10-07 17:51:53 +0900
+
+
+Started GET "/assets/articles.self-ab5245ff89858fff42f132dc9e7636af5282b91259c78dbd89acf7c8a00e04b6.css?body=1" for ::1 at 2015-10-07 17:51:53 +0900
+
+
+Started GET "/assets/home.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-10-07 17:51:53 +0900
+
+
+Started GET "/assets/searcharticles.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-10-07 17:51:53 +0900
+
+
+Started GET "/assets/requestmembers.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-10-07 17:51:53 +0900
+
+
+Started GET "/assets/members.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-10-07 17:51:53 +0900
+
+
+Started GET "/assets/units.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-10-07 17:51:53 +0900
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for ::1 at 2015-10-07 17:51:53 +0900
+
+
+Started GET "/assets/jquery.self-a714331225dda820228db323939889f149aec0127aeb06255646b616ba1ca419.js?body=1" for ::1 at 2015-10-07 17:51:53 +0900
+
+
+Started GET "/assets/jquery_ujs.self-d456baa54c1fa6be2ec3711f0a72ddf7a5b2f34a6b4f515f33767d6207b7d4b3.js?body=1" for ::1 at 2015-10-07 17:51:53 +0900
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2015-10-07 17:51:53 +0900
+
+
+Started GET "/assets/articles.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-10-07 17:51:53 +0900
+
+
+Started GET "/assets/home.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-10-07 17:51:53 +0900
+
+
+Started GET "/assets/members.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-10-07 17:51:53 +0900
+
+
+Started GET "/assets/requestmembers.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-10-07 17:51:53 +0900
+
+
+Started GET "/assets/searcharticles.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-10-07 17:51:53 +0900
+
+
+Started GET "/assets/units.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-10-07 17:51:53 +0900
+
+
+Started GET "/assets/jquery_nested_form.self-d38045d10ebdd28aac44152cb451796232091957b86b47bedad1ab171a3a12cd.js?body=1" for ::1 at 2015-10-07 17:51:53 +0900
+
+
+Started GET "/assets/application.self-f8806224e027f3e3f0138ea9ce99319e298dfdb323304d1f1be6eae8e8c74724.js?body=1" for ::1 at 2015-10-07 17:51:53 +0900
+
+
+Started GET "/articles/new" for ::1 at 2015-10-07 17:51:55 +0900
+Processing by ArticlesController#new as HTML
+  Rendered articles/_form.html.erb (5.0ms)
+  Rendered articles/new.html.erb within layouts/application (8.0ms)
+Completed 500 Internal Server Error in 14ms (ActiveRecord: 0.0ms)
+
+ActionView::Template::Error (First argument in form cannot contain nil or be empty):
+    1: <%= nested_form_for(@article) do |f| %>
+    2:   <%
+    3:       @members = Member.all.map{|m| [m.name, m.id]}
+    4:   %>
+  app/views/articles/_form.html.erb:1:in `_app_views_articles__form_html_erb___293987_97910960'
+  app/views/articles/new.html.erb:3:in `_app_views_articles_new_html_erb___718488077_98081840'
+
+
+  Rendered c:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_source.erb (1.0ms)
+  Rendered c:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (4.0ms)
+  Rendered c:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.0ms)
+  Rendered c:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (30.0ms)
+  Rendered c:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/web-console-2.2.1/lib/web_console/templates/_markup.html.erb (0.0ms)
+  Rendered c:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/web-console-2.2.1/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (1.0ms)
+  Rendered c:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/web-console-2.2.1/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.0ms)
+  Rendered c:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/web-console-2.2.1/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.0ms)
+  Rendered c:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/web-console-2.2.1/lib/web_console/templates/console.js.erb within layouts/javascript (32.0ms)
+  Rendered c:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/web-console-2.2.1/lib/web_console/templates/main.js.erb within layouts/javascript (0.0ms)
+  Rendered c:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/web-console-2.2.1/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.0ms)
+  Rendered c:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/web-console-2.2.1/lib/web_console/templates/index.html.erb (65.0ms)
+
+
+Started GET "/articles/new" for ::1 at 2015-10-07 17:51:55 +0900
+Processing by ArticlesController#new as HTML
+  Rendered articles/_form.html.erb (3.0ms)
+  Rendered articles/new.html.erb within layouts/application (4.0ms)
+Completed 500 Internal Server Error in 11ms (ActiveRecord: 0.0ms)
+
+ActionView::Template::Error (First argument in form cannot contain nil or be empty):
+    1: <%= nested_form_for(@article) do |f| %>
+    2:   <%
+    3:       @members = Member.all.map{|m| [m.name, m.id]}
+    4:   %>
+  app/views/articles/_form.html.erb:1:in `_app_views_articles__form_html_erb___293987_104436880'
+  app/views/articles/new.html.erb:3:in `_app_views_articles_new_html_erb___718488077_105427620'
+
+
+  Rendered c:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.0ms)
+  Rendered c:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (4.0ms)
+  Rendered c:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.0ms)
+  Rendered c:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (28.0ms)
+  Rendered c:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/web-console-2.2.1/lib/web_console/templates/_markup.html.erb (0.0ms)
+  Rendered c:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/web-console-2.2.1/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.0ms)
+  Rendered c:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/web-console-2.2.1/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.0ms)
+  Rendered c:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/web-console-2.2.1/lib/web_console/templates/style.css.erb within layouts/inlined_string (1.0ms)
+  Rendered c:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/web-console-2.2.1/lib/web_console/templates/console.js.erb within layouts/javascript (32.0ms)
+  Rendered c:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/web-console-2.2.1/lib/web_console/templates/main.js.erb within layouts/javascript (0.0ms)
+  Rendered c:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/web-console-2.2.1/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.0ms)
+  Rendered c:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/web-console-2.2.1/lib/web_console/templates/index.html.erb (64.0ms)
+
+
+Started GET "/articles/new" for ::1 at 2015-10-07 17:53:20 +0900
+Processing by ArticlesController#new as HTML
+  [1m[35mUser Load (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+  [1m[36mMember Load (0.0ms)[0m  [1mSELECT "members".* FROM "members"[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "members".* FROM "members"
+  Rendered articles/_requestmember_fields.html.erb (2.0ms)
+  Rendered articles/_form.html.erb (118.0ms)
+  Rendered articles/new.html.erb within layouts/application (121.0ms)
+Completed 200 OK in 312ms (Views: 285.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/home.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-10-07 17:53:21 +0900
+
+
+Started GET "/assets/members.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-10-07 17:53:21 +0900
+
+
+Started GET "/assets/articles.self-ab5245ff89858fff42f132dc9e7636af5282b91259c78dbd89acf7c8a00e04b6.css?body=1" for ::1 at 2015-10-07 17:53:21 +0900
+
+
+Started GET "/assets/requestmembers.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-10-07 17:53:21 +0900
+
+
+Started GET "/assets/scaffolds.self-bbb77a1802a31c020ceaba023240547923f3056f9076362cd6ef876ff0fce9e6.css?body=1" for ::1 at 2015-10-07 17:53:21 +0900
+
+
+Started GET "/assets/searcharticles.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-10-07 17:53:21 +0900
+
+
+Started GET "/assets/units.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-10-07 17:53:21 +0900
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for ::1 at 2015-10-07 17:53:21 +0900
+
+
+Started GET "/assets/jquery.self-a714331225dda820228db323939889f149aec0127aeb06255646b616ba1ca419.js?body=1" for ::1 at 2015-10-07 17:53:21 +0900
+
+
+Started GET "/assets/jquery_ujs.self-d456baa54c1fa6be2ec3711f0a72ddf7a5b2f34a6b4f515f33767d6207b7d4b3.js?body=1" for ::1 at 2015-10-07 17:53:21 +0900
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2015-10-07 17:53:21 +0900
+
+
+Started GET "/assets/articles.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-10-07 17:53:21 +0900
+
+
+Started GET "/assets/home.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-10-07 17:53:21 +0900
+
+
+Started GET "/assets/members.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-10-07 17:53:21 +0900
+
+
+Started GET "/assets/requestmembers.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-10-07 17:53:21 +0900
+
+
+Started GET "/assets/searcharticles.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-10-07 17:53:21 +0900
+
+
+Started GET "/assets/units.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-10-07 17:53:21 +0900
+
+
+Started GET "/assets/jquery_nested_form.self-d38045d10ebdd28aac44152cb451796232091957b86b47bedad1ab171a3a12cd.js?body=1" for ::1 at 2015-10-07 17:53:21 +0900
+
+
+Started GET "/assets/application.self-f8806224e027f3e3f0138ea9ce99319e298dfdb323304d1f1be6eae8e8c74724.js?body=1" for ::1 at 2015-10-07 17:53:21 +0900
