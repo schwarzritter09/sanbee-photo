@@ -44,7 +44,9 @@ gem 'carrierwave'
 gem 'kaminari'
 
 # Use Heroku
-gem 'rails_12factor', group: :production
+group :production, :staging do
+  gem 'rails_12factor', group: :production
+end
 
 # Use image resize
 gem 'rmagick', :require => 'RMagick'
