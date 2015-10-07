@@ -21177,3 +21177,70 @@ Started GET "/assets/jquery_nested_form.self-d38045d10ebdd28aac44152cb4517962320
 
 
 Started GET "/assets/application.self-f8806224e027f3e3f0138ea9ce99319e298dfdb323304d1f1be6eae8e8c74724.js?body=1" for ::1 at 2015-10-07 18:37:04 +0900
+
+
+Started GET "/searcharticles" for ::1 at 2015-10-07 18:43:28 +0900
+  [1m[36mActiveRecord::SchemaMigration Load (0.0ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by SearcharticlesController#index as HTML
+  [1m[35mMember Load (0.0ms)[0m  SELECT "members".* FROM "members"
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "members".* FROM "members"[0m
+  Rendered searcharticles/index.html.erb within layouts/application (41.0ms)
+  [1m[35mUser Load (1.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+Completed 200 OK in 495ms (Views: 480.0ms | ActiveRecord: 2.0ms)
+
+
+Started GET "/assets/members.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-10-07 18:43:28 +0900
+
+
+Started GET "/assets/requestmembers.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-10-07 18:43:28 +0900
+
+
+Started GET "/assets/home.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-10-07 18:43:28 +0900
+
+
+Started GET "/assets/articles.self-ab5245ff89858fff42f132dc9e7636af5282b91259c78dbd89acf7c8a00e04b6.css?body=1" for ::1 at 2015-10-07 18:43:28 +0900
+
+
+Started GET "/assets/scaffolds.self-bbb77a1802a31c020ceaba023240547923f3056f9076362cd6ef876ff0fce9e6.css?body=1" for ::1 at 2015-10-07 18:43:28 +0900
+
+
+Started GET "/assets/units.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-10-07 18:43:28 +0900
+
+
+Started GET "/assets/searcharticles.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-10-07 18:43:28 +0900
+
+
+Started GET "/assets/application.self-0a93a8447ae266383b085541b86f2fef5df433e8bbc36690383ca4bb88ae35b0.css?body=1" for ::1 at 2015-10-07 18:43:28 +0900
+
+
+Started GET "/assets/jquery.self-a714331225dda820228db323939889f149aec0127aeb06255646b616ba1ca419.js?body=1" for ::1 at 2015-10-07 18:43:28 +0900
+
+
+Started GET "/assets/jquery_ujs.self-d456baa54c1fa6be2ec3711f0a72ddf7a5b2f34a6b4f515f33767d6207b7d4b3.js?body=1" for ::1 at 2015-10-07 18:43:28 +0900
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2015-10-07 18:43:28 +0900
+
+
+Started GET "/assets/articles.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-10-07 18:43:28 +0900
+
+
+Started GET "/assets/home.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-10-07 18:43:28 +0900
+
+
+Started GET "/assets/members.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-10-07 18:43:28 +0900
+
+
+Started GET "/assets/requestmembers.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-10-07 18:43:28 +0900
+
+
+Started GET "/assets/searcharticles.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-10-07 18:43:28 +0900
+
+
+Started GET "/assets/units.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-10-07 18:43:28 +0900
+
+
+Started GET "/assets/jquery_nested_form.self-d38045d10ebdd28aac44152cb451796232091957b86b47bedad1ab171a3a12cd.js?body=1" for ::1 at 2015-10-07 18:43:28 +0900
+
+
+Started GET "/assets/application.self-f8806224e027f3e3f0138ea9ce99319e298dfdb323304d1f1be6eae8e8c74724.js?body=1" for ::1 at 2015-10-07 18:43:28 +0900
