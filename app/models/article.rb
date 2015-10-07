@@ -26,7 +26,7 @@ class Article < ActiveRecord::Base
       articles = Article.all
     end
 
-    articles
+    articles.order('id DESC')
 
   end
 end
