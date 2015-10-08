@@ -22,3 +22,7 @@ BODY {
 	text-align: right;
 	background-color: #CCFFFF;
 }
+
+table {
+	width: 100%;
+}

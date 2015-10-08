@@ -18,10 +18,12 @@
     <%= f.label 'メッセージ' %><br>
     <%= f.text_field :message %>
   </div>
+  <% if @article.persisted? %>
   <div class="field">
     <%= f.label '取引済み' %><br>
     <%= f.check_box :close_flag %>
   </div>
+  <% end %>
   <div class="field">
     <%= f.label '譲' %><br>
     <%=
@@ -75,6 +77,10 @@
   </div>
 
   <div class="actions">
-    <%= f.submit '更新する' %>
+  	<% if @article.persisted? %>
+      <%= f.submit '更新する' %>
+  	<% else %>
+      <%= f.submit '登録する' %>
+    <% end %>
   </div>
 <% end %>
