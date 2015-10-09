@@ -5,3 +5,14 @@
 #
 #   cities = City.create([{ name: 'Chicago' }, { name: 'Copenhagen' }])
 #   Mayor.create(name: 'Emanuel', city: cities.first)
+
+require "csv"
+
+
+CSV.foreach('db/unit.csv') do |row|
+  Unit.where(:id => row[0]).first_or_create(:id => row[0], :name => row[1])
+end
+
+CSV.foreach('db/member.csv') do |row|
+  Member.where(:id => row[0]).first_or_create(:id => row[0], :name => row[1], :unit_id => row[2])
+end

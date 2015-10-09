@@ -24194,3 +24194,979 @@ Started GET "/assets/jquery_nested_form.self-d38045d10ebdd28aac44152cb4517962320
 
 
 Started GET "/assets/application.self-f8806224e027f3e3f0138ea9ce99319e298dfdb323304d1f1be6eae8e8c74724.js?body=1" for ::1 at 2015-10-08 16:23:53 +0900
+  [1m[36mActiveRecord::SchemaMigration Load (0.0ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.0ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35mUnit Load (15.6ms)[0m  SELECT  "units".* FROM "units" WHERE "units"."id" = ?  ORDER BY "units"."id" ASC LIMIT 1  [["id", 1]]
+  [1m[36mUnit Load (0.0ms)[0m  [1mSELECT  "units".* FROM "units" WHERE "units"."id" = ?  ORDER BY "units"."id" ASC LIMIT 1[0m  [["id", 2]]
+  [1m[35mUnit Load (0.0ms)[0m  SELECT  "units".* FROM "units" WHERE "units"."id" = ?  ORDER BY "units"."id" ASC LIMIT 1  [["id", 3]]
+  [1m[36mUnit Load (0.0ms)[0m  [1mSELECT  "units".* FROM "units" WHERE "units"."id" = ?  ORDER BY "units"."id" ASC LIMIT 1[0m  [["id", 4]]
+  [1m[35mUnit Load (0.0ms)[0m  SELECT  "units".* FROM "units" WHERE "units"."id" = ?  ORDER BY "units"."id" ASC LIMIT 1  [["id", 5]]
+  [1m[36mMember Load (0.0ms)[0m  [1mSELECT  "members".* FROM "members" WHERE "members"."id" = ?  ORDER BY "members"."id" ASC LIMIT 1[0m  [["id", 1]]
+  [1m[35mMember Load (0.0ms)[0m  SELECT  "members".* FROM "members" WHERE "members"."id" = ?  ORDER BY "members"."id" ASC LIMIT 1  [["id", 2]]
+  [1m[36mMember Load (0.0ms)[0m  [1mSELECT  "members".* FROM "members" WHERE "members"."id" = ?  ORDER BY "members"."id" ASC LIMIT 1[0m  [["id", 3]]
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mSQL (31.2ms)[0m  [1mINSERT INTO "members" ("id", "name", "unit_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["id", 3], ["name", "市川優月"], ["unit_id", 4], ["created_at", "2015-10-09 05:19:18.851059"], ["updated_at", "2015-10-09 05:19:18.851059"]]
+  [1m[35m (204.8ms)[0m  commit transaction
+  [1m[36mMember Load (0.0ms)[0m  [1mSELECT  "members".* FROM "members" WHERE "members"."id" = ?  ORDER BY "members"."id" ASC LIMIT 1[0m  [["id", 4]]
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mSQL (0.0ms)[0m  [1mINSERT INTO "members" ("id", "name", "unit_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["id", 4], ["name", "内山あみ"], ["unit_id", 1], ["created_at", "2015-10-09 05:19:19.087060"], ["updated_at", "2015-10-09 05:19:19.087060"]]
+  [1m[35m (109.2ms)[0m  commit transaction
+  [1m[36mMember Load (0.0ms)[0m  [1mSELECT  "members".* FROM "members" WHERE "members"."id" = ?  ORDER BY "members"."id" ASC LIMIT 1[0m  [["id", 5]]
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mSQL (0.0ms)[0m  [1mINSERT INTO "members" ("id", "name", "unit_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["id", 5], ["name", "うらん"], ["unit_id", 4], ["created_at", "2015-10-09 05:19:19.211860"], ["updated_at", "2015-10-09 05:19:19.211860"]]
+  [1m[35m (93.6ms)[0m  commit transaction
+  [1m[36mMember Load (0.0ms)[0m  [1mSELECT  "members".* FROM "members" WHERE "members"."id" = ?  ORDER BY "members"."id" ASC LIMIT 1[0m  [["id", 6]]
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mSQL (0.0ms)[0m  [1mINSERT INTO "members" ("id", "name", "unit_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["id", 6], ["name", "大平ひかる"], ["unit_id", 4], ["created_at", "2015-10-09 05:19:19.321060"], ["updated_at", "2015-10-09 05:19:19.321060"]]
+  [1m[35m (111.2ms)[0m  commit transaction
+  [1m[36mMember Load (0.0ms)[0m  [1mSELECT  "members".* FROM "members" WHERE "members"."id" = ?  ORDER BY "members"."id" ASC LIMIT 1[0m  [["id", 7]]
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mSQL (0.0ms)[0m  [1mINSERT INTO "members" ("id", "name", "unit_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["id", 7], ["name", "奥澤レイナ"], ["unit_id", 5], ["created_at", "2015-10-09 05:19:19.432260"], ["updated_at", "2015-10-09 05:19:19.432260"]]
+  [1m[35m (140.4ms)[0m  commit transaction
+  [1m[36mMember Load (0.0ms)[0m  [1mSELECT  "members".* FROM "members" WHERE "members"."id" = ?  ORDER BY "members"."id" ASC LIMIT 1[0m  [["id", 8]]
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mSQL (0.0ms)[0m  [1mINSERT INTO "members" ("id", "name", "unit_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["id", 8], ["name", "小田垣陽菜"], ["unit_id", 4], ["created_at", "2015-10-09 05:19:19.572661"], ["updated_at", "2015-10-09 05:19:19.572661"]]
+  [1m[35m (93.6ms)[0m  commit transaction
+  [1m[36mMember Load (0.0ms)[0m  [1mSELECT  "members".* FROM "members" WHERE "members"."id" = ?  ORDER BY "members"."id" ASC LIMIT 1[0m  [["id", 9]]
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mSQL (0.0ms)[0m  [1mINSERT INTO "members" ("id", "name", "unit_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["id", 9], ["name", "公野舞華"], ["unit_id", 2], ["created_at", "2015-10-09 05:19:19.666261"], ["updated_at", "2015-10-09 05:19:19.666261"]]
+  [1m[35m (93.6ms)[0m  commit transaction
+  [1m[36mMember Load (0.0ms)[0m  [1mSELECT  "members".* FROM "members" WHERE "members"."id" = ?  ORDER BY "members"."id" ASC LIMIT 1[0m  [["id", 10]]
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mSQL (0.0ms)[0m  [1mINSERT INTO "members" ("id", "name", "unit_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["id", 10], ["name", "栗本柚希"], ["unit_id", 3], ["created_at", "2015-10-09 05:19:19.759861"], ["updated_at", "2015-10-09 05:19:19.759861"]]
+  [1m[35m (93.6ms)[0m  commit transaction
+  [1m[36mMember Load (0.0ms)[0m  [1mSELECT  "members".* FROM "members" WHERE "members"."id" = ?  ORDER BY "members"."id" ASC LIMIT 1[0m  [["id", 11]]
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mSQL (0.0ms)[0m  [1mINSERT INTO "members" ("id", "name", "unit_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["id", 11], ["name", "小島はな"], ["unit_id", 4], ["created_at", "2015-10-09 05:19:19.853461"], ["updated_at", "2015-10-09 05:19:19.853461"]]
+  [1m[35m (93.6ms)[0m  commit transaction
+  [1m[36mMember Load (0.0ms)[0m  [1mSELECT  "members".* FROM "members" WHERE "members"."id" = ?  ORDER BY "members"."id" ASC LIMIT 1[0m  [["id", 12]]
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mSQL (0.0ms)[0m  [1mINSERT INTO "members" ("id", "name", "unit_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["id", 12], ["name", "斎藤夏鈴"], ["unit_id", 4], ["created_at", "2015-10-09 05:19:19.947061"], ["updated_at", "2015-10-09 05:19:19.947061"]]
+  [1m[35m (93.6ms)[0m  commit transaction
+  [1m[36mMember Load (0.0ms)[0m  [1mSELECT  "members".* FROM "members" WHERE "members"."id" = ?  ORDER BY "members"."id" ASC LIMIT 1[0m  [["id", 13]]
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mSQL (0.0ms)[0m  [1mINSERT INTO "members" ("id", "name", "unit_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["id", 13], ["name", "椎名るか"], ["unit_id", 1], ["created_at", "2015-10-09 05:19:20.040661"], ["updated_at", "2015-10-09 05:19:20.040661"]]
+  [1m[35m (93.6ms)[0m  commit transaction
+  [1m[36mMember Load (0.0ms)[0m  [1mSELECT  "members".* FROM "members" WHERE "members"."id" = ?  ORDER BY "members"."id" ASC LIMIT 1[0m  [["id", 14]]
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mSQL (0.0ms)[0m  [1mINSERT INTO "members" ("id", "name", "unit_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["id", 14], ["name", "鈴木萌花"], ["unit_id", 4], ["created_at", "2015-10-09 05:19:20.134262"], ["updated_at", "2015-10-09 05:19:20.134262"]]
+  [1m[35m (123.2ms)[0m  commit transaction
+  [1m[36mMember Load (0.0ms)[0m  [1mSELECT  "members".* FROM "members" WHERE "members"."id" = ?  ORDER BY "members"."id" ASC LIMIT 1[0m  [["id", 15]]
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mSQL (1.0ms)[0m  [1mINSERT INTO "members" ("id", "name", "unit_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["id", 15], ["name", "高井千帆"], ["unit_id", 1], ["created_at", "2015-10-09 05:19:20.259463"], ["updated_at", "2015-10-09 05:19:20.259463"]]
+  [1m[35m (89.6ms)[0m  commit transaction
+  [1m[36mMember Load (0.0ms)[0m  [1mSELECT  "members".* FROM "members" WHERE "members"."id" = ?  ORDER BY "members"."id" ASC LIMIT 1[0m  [["id", 16]]
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mSQL (0.0ms)[0m  [1mINSERT INTO "members" ("id", "name", "unit_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["id", 16], ["name", "塚本颯来"], ["unit_id", 2], ["created_at", "2015-10-09 05:19:20.350067"], ["updated_at", "2015-10-09 05:19:20.350067"]]
+  [1m[35m (98.0ms)[0m  commit transaction
+  [1m[36mMember Load (0.0ms)[0m  [1mSELECT  "members".* FROM "members" WHERE "members"."id" = ?  ORDER BY "members"."id" ASC LIMIT 1[0m  [["id", 17]]
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mSQL (1.0ms)[0m  [1mINSERT INTO "members" ("id", "name", "unit_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["id", 17], ["name", "内藤るな"], ["unit_id", 1], ["created_at", "2015-10-09 05:19:20.449068"], ["updated_at", "2015-10-09 05:19:20.449068"]]
+  [1m[35m (87.0ms)[0m  commit transaction
+  [1m[36mMember Load (0.0ms)[0m  [1mSELECT  "members".* FROM "members" WHERE "members"."id" = ?  ORDER BY "members"."id" ASC LIMIT 1[0m  [["id", 18]]
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mSQL (0.0ms)[0m  [1mINSERT INTO "members" ("id", "name", "unit_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["id", 18], ["name", "中原咲耶"], ["unit_id", 4], ["created_at", "2015-10-09 05:19:20.538069"], ["updated_at", "2015-10-09 05:19:20.538069"]]
+  [1m[35m (93.6ms)[0m  commit transaction
+  [1m[36mMember Load (0.0ms)[0m  [1mSELECT  "members".* FROM "members" WHERE "members"."id" = ?  ORDER BY "members"."id" ASC LIMIT 1[0m  [["id", 19]]
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mSQL (0.0ms)[0m  [1mINSERT INTO "members" ("id", "name", "unit_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["id", 19], ["name", "中村優"], ["unit_id", 5], ["created_at", "2015-10-09 05:19:20.647269"], ["updated_at", "2015-10-09 05:19:20.647269"]]
+  [1m[35m (133.2ms)[0m  commit transaction
+  [1m[36mMember Load (0.0ms)[0m  [1mSELECT  "members".* FROM "members" WHERE "members"."id" = ?  ORDER BY "members"."id" ASC LIMIT 1[0m  [["id", 20]]
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mSQL (0.0ms)[0m  [1mINSERT INTO "members" ("id", "name", "unit_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["id", 20], ["name", "永山真愛"], ["unit_id", 5], ["created_at", "2015-10-09 05:19:20.780471"], ["updated_at", "2015-10-09 05:19:20.780471"]]
+  [1m[35m (296.4ms)[0m  commit transaction
+  [1m[36mMember Load (0.0ms)[0m  [1mSELECT  "members".* FROM "members" WHERE "members"."id" = ?  ORDER BY "members"."id" ASC LIMIT 1[0m  [["id", 21]]
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mSQL (0.0ms)[0m  [1mINSERT INTO "members" ("id", "name", "unit_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["id", 21], ["name", "葉月智子"], ["unit_id", 3], ["created_at", "2015-10-09 05:19:21.076871"], ["updated_at", "2015-10-09 05:19:21.076871"]]
+  [1m[35m (109.2ms)[0m  commit transaction
+  [1m[36mMember Load (0.0ms)[0m  [1mSELECT  "members".* FROM "members" WHERE "members"."id" = ?  ORDER BY "members"."id" ASC LIMIT 1[0m  [["id", 22]]
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mSQL (0.0ms)[0m  [1mINSERT INTO "members" ("id", "name", "unit_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["id", 22], ["name", "華山志歩"], ["unit_id", 2], ["created_at", "2015-10-09 05:19:21.186072"], ["updated_at", "2015-10-09 05:19:21.186072"]]
+  [1m[35m (126.8ms)[0m  commit transaction
+  [1m[36mMember Load (0.0ms)[0m  [1mSELECT  "members".* FROM "members" WHERE "members"."id" = ?  ORDER BY "members"."id" ASC LIMIT 1[0m  [["id", 23]]
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mSQL (0.0ms)[0m  [1mINSERT INTO "members" ("id", "name", "unit_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["id", 23], ["name", "播磨怜奈"], ["unit_id", 2], ["created_at", "2015-10-09 05:19:21.328472"], ["updated_at", "2015-10-09 05:19:21.328472"]]
+  [1m[35m (109.2ms)[0m  commit transaction
+  [1m[36mMember Load (0.0ms)[0m  [1mSELECT  "members".* FROM "members" WHERE "members"."id" = ?  ORDER BY "members"."id" ASC LIMIT 1[0m  [["id", 24]]
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mSQL (0.0ms)[0m  [1mINSERT INTO "members" ("id", "name", "unit_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["id", 24], ["name", "平瀬美里"], ["unit_id", 1], ["created_at", "2015-10-09 05:19:21.437672"], ["updated_at", "2015-10-09 05:19:21.437672"]]
+  [1m[35m (93.6ms)[0m  commit transaction
+  [1m[36mMember Load (0.0ms)[0m  [1mSELECT  "members".* FROM "members" WHERE "members"."id" = ?  ORDER BY "members"."id" ASC LIMIT 1[0m  [["id", 25]]
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mSQL (0.0ms)[0m  [1mINSERT INTO "members" ("id", "name", "unit_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["id", 25], ["name", "森青葉"], ["unit_id", 2], ["created_at", "2015-10-09 05:19:21.531272"], ["updated_at", "2015-10-09 05:19:21.531272"]]
+  [1m[35m (93.6ms)[0m  commit transaction
+  [1m[36mMember Load (0.0ms)[0m  [1mSELECT "members".* FROM "members"[0m
+
+
+Started GET "/" for ::1 at 2015-10-09 14:22:34 +0900
+  [1m[36mActiveRecord::SchemaMigration Load (1.0ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by ArticlesController#index as HTML
+  [1m[35mArticle Load (1.0ms)[0m  SELECT  "articles".* FROM "articles"  ORDER BY id DESC, "articles"."id" ASC LIMIT 10 OFFSET 0
+  [1m[36mUser Load (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mMember Load (0.0ms)[0m  SELECT  "members".* FROM "members" WHERE "members"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mMember Load (1.0ms)[0m  [1mSELECT "members".* FROM "members" INNER JOIN "requestmembers" ON "members"."id" = "requestmembers"."member_id" WHERE "requestmembers"."article_id" = ?[0m  [["article_id", 13]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mMember Load (1.0ms)[0m  [1mSELECT  "members".* FROM "members" WHERE "members"."id" = ? LIMIT 1[0m  [["id", 2]]
+  [1m[35mMember Load (0.0ms)[0m  SELECT "members".* FROM "members" INNER JOIN "requestmembers" ON "members"."id" = "requestmembers"."member_id" WHERE "requestmembers"."article_id" = ?  [["article_id", 12]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "members".* FROM "members" WHERE "members"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mMember Load (0.0ms)[0m  [1mSELECT "members".* FROM "members" INNER JOIN "requestmembers" ON "members"."id" = "requestmembers"."member_id" WHERE "requestmembers"."article_id" = ?[0m  [["article_id", 11]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "members".* FROM "members" WHERE "members"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mMember Load (0.0ms)[0m  SELECT "members".* FROM "members" INNER JOIN "requestmembers" ON "members"."id" = "requestmembers"."member_id" WHERE "requestmembers"."article_id" = ?  [["article_id", 10]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "members".* FROM "members" WHERE "members"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mMember Load (0.0ms)[0m  [1mSELECT "members".* FROM "members" INNER JOIN "requestmembers" ON "members"."id" = "requestmembers"."member_id" WHERE "requestmembers"."article_id" = ?[0m  [["article_id", 9]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "members".* FROM "members" WHERE "members"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mMember Load (0.0ms)[0m  SELECT "members".* FROM "members" INNER JOIN "requestmembers" ON "members"."id" = "requestmembers"."member_id" WHERE "requestmembers"."article_id" = ?  [["article_id", 8]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "members".* FROM "members" WHERE "members"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mMember Load (1.0ms)[0m  [1mSELECT "members".* FROM "members" INNER JOIN "requestmembers" ON "members"."id" = "requestmembers"."member_id" WHERE "requestmembers"."article_id" = ?[0m  [["article_id", 7]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "members".* FROM "members" WHERE "members"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mMember Load (0.0ms)[0m  SELECT "members".* FROM "members" INNER JOIN "requestmembers" ON "members"."id" = "requestmembers"."member_id" WHERE "requestmembers"."article_id" = ?  [["article_id", 6]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "members".* FROM "members" WHERE "members"."id" = ? LIMIT 1  [["id", 2]]
+  [1m[36mMember Load (0.0ms)[0m  [1mSELECT "members".* FROM "members" INNER JOIN "requestmembers" ON "members"."id" = "requestmembers"."member_id" WHERE "requestmembers"."article_id" = ?[0m  [["article_id", 5]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "members".* FROM "members" WHERE "members"."id" = ? LIMIT 1[0m  [["id", 2]]
+  [1m[35mMember Load (0.0ms)[0m  SELECT "members".* FROM "members" INNER JOIN "requestmembers" ON "members"."id" = "requestmembers"."member_id" WHERE "requestmembers"."article_id" = ?  [["article_id", 4]]
+  [1m[36m (0.0ms)[0m  [1mSELECT COUNT(*) FROM "articles"[0m
+  Rendered articles/index.html.erb within layouts/application (241.0ms)
+  [1m[35mUser Load (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+Completed 200 OK in 1289ms (Views: 1200.1ms | ActiveRecord: 7.0ms)
+
+
+Started GET "/units" for ::1 at 2015-10-09 14:22:36 +0900
+Processing by UnitsController#index as HTML
+  [1m[36mUnit Load (0.0ms)[0m  [1mSELECT "units".* FROM "units"[0m
+  Rendered units/index.html.erb within layouts/application (5.0ms)
+  [1m[35mUser Load (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+Completed 200 OK in 220ms (Views: 215.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/home.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-10-09 14:22:36 +0900
+
+
+Started GET "/assets/members.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-10-09 14:22:36 +0900
+
+
+Started GET "/assets/articles.self-ab5245ff89858fff42f132dc9e7636af5282b91259c78dbd89acf7c8a00e04b6.css?body=1" for ::1 at 2015-10-09 14:22:36 +0900
+
+
+Started GET "/assets/requestmembers.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-10-09 14:22:36 +0900
+
+
+Started GET "/assets/scaffolds.self-7884b308dea2795f99f453a71c4f5be52ef7990fd2bde2d9832c8c1ad69c8fc9.css?body=1" for ::1 at 2015-10-09 14:22:36 +0900
+
+
+Started GET "/assets/searcharticles.self-21a057e7082c4409604501cac3809366102aeaea6e27fed2b97c25a6616d40d5.css?body=1" for ::1 at 2015-10-09 14:22:36 +0900
+
+
+Started GET "/assets/home.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-10-09 14:22:36 +0900
+
+
+Started GET "/assets/articles.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-10-09 14:22:36 +0900
+
+
+Started GET "/assets/application.self-b64d55e512d58ff0e7778e2cdddbdb336c287031d0f7c904ec6d4b3ed80bbb55.css?body=1" for ::1 at 2015-10-09 14:22:36 +0900
+
+
+Started GET "/assets/units.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-10-09 14:22:36 +0900
+
+
+Started GET "/assets/members.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-10-09 14:22:36 +0900
+
+
+Started GET "/assets/requestmembers.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-10-09 14:22:36 +0900
+
+
+Started GET "/assets/searcharticles.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-10-09 14:22:36 +0900
+
+
+Started GET "/assets/units.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-10-09 14:22:36 +0900
+
+
+Started GET "/assets/application.self-f8806224e027f3e3f0138ea9ce99319e298dfdb323304d1f1be6eae8e8c74724.js?body=1" for ::1 at 2015-10-09 14:22:36 +0900
+
+
+Started GET "/members" for ::1 at 2015-10-09 14:22:44 +0900
+Processing by MembersController#index as HTML
+  [1m[36mMember Load (1.0ms)[0m  [1mSELECT "members".* FROM "members"[0m
+  [1m[35mUnit Load (0.0ms)[0m  SELECT  "units".* FROM "units" WHERE "units"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mCACHE (1.0ms)[0m  [1mSELECT  "units".* FROM "units" WHERE "units"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mUnit Load (1.0ms)[0m  SELECT  "units".* FROM "units" WHERE "units"."id" = ? LIMIT 1  [["id", 4]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "units".* FROM "units" WHERE "units"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "units".* FROM "units" WHERE "units"."id" = ? LIMIT 1  [["id", 4]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "units".* FROM "units" WHERE "units"."id" = ? LIMIT 1[0m  [["id", 4]]
+  [1m[35mUnit Load (0.0ms)[0m  SELECT  "units".* FROM "units" WHERE "units"."id" = ? LIMIT 1  [["id", 5]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "units".* FROM "units" WHERE "units"."id" = ? LIMIT 1[0m  [["id", 4]]
+  [1m[35mUnit Load (0.0ms)[0m  SELECT  "units".* FROM "units" WHERE "units"."id" = ? LIMIT 1  [["id", 2]]
+  [1m[36mUnit Load (0.0ms)[0m  [1mSELECT  "units".* FROM "units" WHERE "units"."id" = ? LIMIT 1[0m  [["id", 3]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "units".* FROM "units" WHERE "units"."id" = ? LIMIT 1  [["id", 4]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "units".* FROM "units" WHERE "units"."id" = ? LIMIT 1[0m  [["id", 4]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "units".* FROM "units" WHERE "units"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "units".* FROM "units" WHERE "units"."id" = ? LIMIT 1[0m  [["id", 4]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "units".* FROM "units" WHERE "units"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "units".* FROM "units" WHERE "units"."id" = ? LIMIT 1[0m  [["id", 2]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "units".* FROM "units" WHERE "units"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "units".* FROM "units" WHERE "units"."id" = ? LIMIT 1[0m  [["id", 4]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "units".* FROM "units" WHERE "units"."id" = ? LIMIT 1  [["id", 5]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "units".* FROM "units" WHERE "units"."id" = ? LIMIT 1[0m  [["id", 5]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "units".* FROM "units" WHERE "units"."id" = ? LIMIT 1  [["id", 3]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "units".* FROM "units" WHERE "units"."id" = ? LIMIT 1[0m  [["id", 2]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "units".* FROM "units" WHERE "units"."id" = ? LIMIT 1  [["id", 2]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "units".* FROM "units" WHERE "units"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "units".* FROM "units" WHERE "units"."id" = ? LIMIT 1  [["id", 2]]
+  Rendered members/index.html.erb within layouts/application (119.0ms)
+  [1m[36mUser Load (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+Completed 200 OK in 418ms (Views: 414.0ms | ActiveRecord: 3.0ms)
+
+
+Started DELETE "/units/6" for ::1 at 2015-10-09 14:23:24 +0900
+Processing by UnitsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"mkSLb0b7iRTV+QLSCQQw8llPULr1Qkv+rbIDbUHRTSM/YBvYAiDXOleoSZRvL/TLEpxBVWUDzd0oeU/HliS9vA==", "id"=>"6"}
+  [1m[35mUnit Load (0.0ms)[0m  SELECT  "units".* FROM "units" WHERE "units"."id" = ? LIMIT 1  [["id", 6]]
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (1.0ms)[0m  DELETE FROM "units" WHERE "units"."id" = ?  [["id", 6]]
+  [1m[36m (118.0ms)[0m  [1mcommit transaction[0m
+Redirected to http://localhost:3000/units
+Completed 302 Found in 126ms (ActiveRecord: 119.0ms)
+
+
+Started GET "/units" for ::1 at 2015-10-09 14:23:25 +0900
+Processing by UnitsController#index as HTML
+  [1m[35mUnit Load (1.0ms)[0m  SELECT "units".* FROM "units"
+  Rendered units/index.html.erb within layouts/application (3.0ms)
+  [1m[36mUser Load (1.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+Completed 200 OK in 234ms (Views: 231.0ms | ActiveRecord: 2.0ms)
+
+
+Started GET "/units/5/edit" for ::1 at 2015-10-09 14:23:26 +0900
+Processing by UnitsController#edit as HTML
+  Parameters: {"id"=>"5"}
+  [1m[35mUnit Load (0.0ms)[0m  SELECT  "units".* FROM "units" WHERE "units"."id" = ? LIMIT 1  [["id", 5]]
+  Rendered units/_form.html.erb (113.6ms)
+  Rendered units/edit.html.erb within layouts/application (116.6ms)
+  [1m[36mUser Load (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+Completed 200 OK in 315ms (Views: 314.2ms | ActiveRecord: 0.0ms)
+
+
+Started PATCH "/units/5" for ::1 at 2015-10-09 14:23:34 +0900
+Processing by UnitsController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"N9cUeFFtZ4gGRR8WwmgBIqQspuTYFGq1ARxhXYgN89KS84TPFbY5poQUVFCkQ8Ub7/+3C0hV7JaE1y33X/gDTQ==", "unit"=>{"name"=>"マジェスティック7・中原咲耶"}, "commit"=>"Update Unit", "id"=>"5"}
+  [1m[35mUnit Load (0.0ms)[0m  SELECT  "units".* FROM "units" WHERE "units"."id" = ? LIMIT 1  [["id", 5]]
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (1.0ms)[0m  UPDATE "units" SET "name" = ?, "updated_at" = ? WHERE "units"."id" = ?  [["name", "マジェスティック7・中原咲耶"], ["updated_at", "2015-10-09 05:23:34.581291"], ["id", 5]]
+  [1m[36m (180.0ms)[0m  [1mcommit transaction[0m
+Redirected to http://localhost:3000/units/5
+Completed 302 Found in 205ms (ActiveRecord: 181.0ms)
+
+
+Started GET "/units/5" for ::1 at 2015-10-09 14:23:34 +0900
+Processing by UnitsController#show as HTML
+  Parameters: {"id"=>"5"}
+  [1m[35mUnit Load (0.0ms)[0m  SELECT  "units".* FROM "units" WHERE "units"."id" = ? LIMIT 1  [["id", 5]]
+  Rendered units/show.html.erb within layouts/application (1.0ms)
+  [1m[36mUser Load (1.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+Completed 200 OK in 248ms (Views: 245.0ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/units" for ::1 at 2015-10-09 14:23:36 +0900
+Processing by UnitsController#index as HTML
+  [1m[35mUnit Load (0.0ms)[0m  SELECT "units".* FROM "units"
+  Rendered units/index.html.erb within layouts/application (16.6ms)
+  [1m[36mUser Load (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+Completed 200 OK in 208ms (Views: 208.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/members" for ::1 at 2015-10-09 14:23:40 +0900
+Processing by MembersController#index as HTML
+  [1m[35mMember Load (0.0ms)[0m  SELECT "members".* FROM "members"
+  [1m[36mUnit Load (0.0ms)[0m  [1mSELECT  "units".* FROM "units" WHERE "units"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "units".* FROM "units" WHERE "units"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mUnit Load (0.0ms)[0m  [1mSELECT  "units".* FROM "units" WHERE "units"."id" = ? LIMIT 1[0m  [["id", 4]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "units".* FROM "units" WHERE "units"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "units".* FROM "units" WHERE "units"."id" = ? LIMIT 1[0m  [["id", 4]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "units".* FROM "units" WHERE "units"."id" = ? LIMIT 1  [["id", 4]]
+  [1m[36mUnit Load (0.0ms)[0m  [1mSELECT  "units".* FROM "units" WHERE "units"."id" = ? LIMIT 1[0m  [["id", 5]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "units".* FROM "units" WHERE "units"."id" = ? LIMIT 1  [["id", 4]]
+  [1m[36mUnit Load (0.0ms)[0m  [1mSELECT  "units".* FROM "units" WHERE "units"."id" = ? LIMIT 1[0m  [["id", 2]]
+  [1m[35mUnit Load (0.0ms)[0m  SELECT  "units".* FROM "units" WHERE "units"."id" = ? LIMIT 1  [["id", 3]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "units".* FROM "units" WHERE "units"."id" = ? LIMIT 1[0m  [["id", 4]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "units".* FROM "units" WHERE "units"."id" = ? LIMIT 1  [["id", 4]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "units".* FROM "units" WHERE "units"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "units".* FROM "units" WHERE "units"."id" = ? LIMIT 1  [["id", 4]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "units".* FROM "units" WHERE "units"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "units".* FROM "units" WHERE "units"."id" = ? LIMIT 1  [["id", 2]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "units".* FROM "units" WHERE "units"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "units".* FROM "units" WHERE "units"."id" = ? LIMIT 1  [["id", 4]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "units".* FROM "units" WHERE "units"."id" = ? LIMIT 1[0m  [["id", 5]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "units".* FROM "units" WHERE "units"."id" = ? LIMIT 1  [["id", 5]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "units".* FROM "units" WHERE "units"."id" = ? LIMIT 1[0m  [["id", 3]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "units".* FROM "units" WHERE "units"."id" = ? LIMIT 1  [["id", 2]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "units".* FROM "units" WHERE "units"."id" = ? LIMIT 1[0m  [["id", 2]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "units".* FROM "units" WHERE "units"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "units".* FROM "units" WHERE "units"."id" = ? LIMIT 1[0m  [["id", 2]]
+  Rendered members/index.html.erb within layouts/application (44.6ms)
+  [1m[35mUser Load (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+Completed 200 OK in 302ms (Views: 301.6ms | ActiveRecord: 0.0ms)
+  [1m[36mActiveRecord::SchemaMigration Load (1.0ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35mUnit Load (1.0ms)[0m  SELECT  "units".* FROM "units" WHERE "units"."id" = ?  ORDER BY "units"."id" ASC LIMIT 1  [["id", 1]]
+  [1m[36m (1.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (1.0ms)[0m  INSERT INTO "units" ("id", "name", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["id", 1], ["name", "キングレコード組(仮)"], ["created_at", "2015-10-09 05:24:44.822113"], ["updated_at", "2015-10-09 05:24:44.822113"]]
+  [1m[36m (120.0ms)[0m  [1mcommit transaction[0m
+  [1m[35mUnit Load (0.0ms)[0m  SELECT  "units".* FROM "units" WHERE "units"."id" = ?  ORDER BY "units"."id" ASC LIMIT 1  [["id", 2]]
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.0ms)[0m  INSERT INTO "units" ("id", "name", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["id", 2], ["name", "はちみつロケット"], ["created_at", "2015-10-09 05:24:44.946120"], ["updated_at", "2015-10-09 05:24:44.946120"]]
+  [1m[36m (95.0ms)[0m  [1mcommit transaction[0m
+  [1m[35mUnit Load (0.0ms)[0m  SELECT  "units".* FROM "units" WHERE "units"."id" = ?  ORDER BY "units"."id" ASC LIMIT 1  [["id", 3]]
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (1.0ms)[0m  INSERT INTO "units" ("id", "name", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["id", 3], ["name", "リーフシトロン"], ["created_at", "2015-10-09 05:24:45.044126"], ["updated_at", "2015-10-09 05:24:45.044126"]]
+  [1m[36m (88.0ms)[0m  [1mcommit transaction[0m
+  [1m[35mUnit Load (0.0ms)[0m  SELECT  "units".* FROM "units" WHERE "units"."id" = ?  ORDER BY "units"."id" ASC LIMIT 1  [["id", 4]]
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (1.0ms)[0m  INSERT INTO "units" ("id", "name", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["id", 4], ["name", "マジェスティック7・中原咲耶"], ["created_at", "2015-10-09 05:24:45.136131"], ["updated_at", "2015-10-09 05:24:45.136131"]]
+  [1m[36m (110.0ms)[0m  [1mcommit transaction[0m
+  [1m[35mUnit Load (0.0ms)[0m  SELECT  "units".* FROM "units" WHERE "units"."id" = ?  ORDER BY "units"."id" ASC LIMIT 1  [["id", 5]]
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.0ms)[0m  INSERT INTO "units" ("id", "name", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["id", 5], ["name", "奥澤村"], ["created_at", "2015-10-09 05:24:45.250137"], ["updated_at", "2015-10-09 05:24:45.250137"]]
+  [1m[36m (96.0ms)[0m  [1mcommit transaction[0m
+  [1m[35mMember Load (1.0ms)[0m  SELECT  "members".* FROM "members" WHERE "members"."id" = ?  ORDER BY "members"."id" ASC LIMIT 1  [["id", 1]]
+  [1m[36mMember Load (0.0ms)[0m  [1mSELECT  "members".* FROM "members" WHERE "members"."id" = ?  ORDER BY "members"."id" ASC LIMIT 1[0m  [["id", 2]]
+  [1m[35mMember Load (0.0ms)[0m  SELECT  "members".* FROM "members" WHERE "members"."id" = ?  ORDER BY "members"."id" ASC LIMIT 1  [["id", 3]]
+  [1m[36mMember Load (0.0ms)[0m  [1mSELECT  "members".* FROM "members" WHERE "members"."id" = ?  ORDER BY "members"."id" ASC LIMIT 1[0m  [["id", 4]]
+  [1m[35mMember Load (0.0ms)[0m  SELECT  "members".* FROM "members" WHERE "members"."id" = ?  ORDER BY "members"."id" ASC LIMIT 1  [["id", 5]]
+  [1m[36mMember Load (0.0ms)[0m  [1mSELECT  "members".* FROM "members" WHERE "members"."id" = ?  ORDER BY "members"."id" ASC LIMIT 1[0m  [["id", 6]]
+  [1m[35mMember Load (0.0ms)[0m  SELECT  "members".* FROM "members" WHERE "members"."id" = ?  ORDER BY "members"."id" ASC LIMIT 1  [["id", 7]]
+  [1m[36mMember Load (0.0ms)[0m  [1mSELECT  "members".* FROM "members" WHERE "members"."id" = ?  ORDER BY "members"."id" ASC LIMIT 1[0m  [["id", 8]]
+  [1m[35mMember Load (0.0ms)[0m  SELECT  "members".* FROM "members" WHERE "members"."id" = ?  ORDER BY "members"."id" ASC LIMIT 1  [["id", 9]]
+  [1m[36mMember Load (0.0ms)[0m  [1mSELECT  "members".* FROM "members" WHERE "members"."id" = ?  ORDER BY "members"."id" ASC LIMIT 1[0m  [["id", 10]]
+  [1m[35mMember Load (0.0ms)[0m  SELECT  "members".* FROM "members" WHERE "members"."id" = ?  ORDER BY "members"."id" ASC LIMIT 1  [["id", 11]]
+  [1m[36mMember Load (0.0ms)[0m  [1mSELECT  "members".* FROM "members" WHERE "members"."id" = ?  ORDER BY "members"."id" ASC LIMIT 1[0m  [["id", 12]]
+  [1m[35mMember Load (0.0ms)[0m  SELECT  "members".* FROM "members" WHERE "members"."id" = ?  ORDER BY "members"."id" ASC LIMIT 1  [["id", 13]]
+  [1m[36mMember Load (0.0ms)[0m  [1mSELECT  "members".* FROM "members" WHERE "members"."id" = ?  ORDER BY "members"."id" ASC LIMIT 1[0m  [["id", 14]]
+  [1m[35mMember Load (0.0ms)[0m  SELECT  "members".* FROM "members" WHERE "members"."id" = ?  ORDER BY "members"."id" ASC LIMIT 1  [["id", 15]]
+  [1m[36mMember Load (0.0ms)[0m  [1mSELECT  "members".* FROM "members" WHERE "members"."id" = ?  ORDER BY "members"."id" ASC LIMIT 1[0m  [["id", 16]]
+  [1m[35mMember Load (1.0ms)[0m  SELECT  "members".* FROM "members" WHERE "members"."id" = ?  ORDER BY "members"."id" ASC LIMIT 1  [["id", 17]]
+  [1m[36mMember Load (0.0ms)[0m  [1mSELECT  "members".* FROM "members" WHERE "members"."id" = ?  ORDER BY "members"."id" ASC LIMIT 1[0m  [["id", 18]]
+  [1m[35mMember Load (0.0ms)[0m  SELECT  "members".* FROM "members" WHERE "members"."id" = ?  ORDER BY "members"."id" ASC LIMIT 1  [["id", 19]]
+  [1m[36mMember Load (0.0ms)[0m  [1mSELECT  "members".* FROM "members" WHERE "members"."id" = ?  ORDER BY "members"."id" ASC LIMIT 1[0m  [["id", 20]]
+  [1m[35mMember Load (0.0ms)[0m  SELECT  "members".* FROM "members" WHERE "members"."id" = ?  ORDER BY "members"."id" ASC LIMIT 1  [["id", 21]]
+  [1m[36mMember Load (0.0ms)[0m  [1mSELECT  "members".* FROM "members" WHERE "members"."id" = ?  ORDER BY "members"."id" ASC LIMIT 1[0m  [["id", 22]]
+  [1m[35mMember Load (0.0ms)[0m  SELECT  "members".* FROM "members" WHERE "members"."id" = ?  ORDER BY "members"."id" ASC LIMIT 1  [["id", 23]]
+  [1m[36mMember Load (0.0ms)[0m  [1mSELECT  "members".* FROM "members" WHERE "members"."id" = ?  ORDER BY "members"."id" ASC LIMIT 1[0m  [["id", 24]]
+  [1m[35mMember Load (0.0ms)[0m  SELECT  "members".* FROM "members" WHERE "members"."id" = ?  ORDER BY "members"."id" ASC LIMIT 1  [["id", 25]]
+
+
+Started GET "/units" for ::1 at 2015-10-09 14:25:26 +0900
+  [1m[36mActiveRecord::SchemaMigration Load (0.0ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by UnitsController#index as HTML
+  [1m[35mUnit Load (1.0ms)[0m  SELECT "units".* FROM "units"
+  Rendered units/index.html.erb within layouts/application (48.0ms)
+  [1m[36mUser Load (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+Completed 200 OK in 576ms (Views: 544.0ms | ActiveRecord: 3.0ms)
+
+
+Started GET "/members" for ::1 at 2015-10-09 14:25:33 +0900
+Processing by MembersController#index as HTML
+  [1m[35mMember Load (0.0ms)[0m  SELECT "members".* FROM "members"
+  [1m[36mUnit Load (0.0ms)[0m  [1mSELECT  "units".* FROM "units" WHERE "units"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "units".* FROM "units" WHERE "units"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mUnit Load (0.0ms)[0m  [1mSELECT  "units".* FROM "units" WHERE "units"."id" = ? LIMIT 1[0m  [["id", 4]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "units".* FROM "units" WHERE "units"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "units".* FROM "units" WHERE "units"."id" = ? LIMIT 1[0m  [["id", 4]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "units".* FROM "units" WHERE "units"."id" = ? LIMIT 1  [["id", 4]]
+  [1m[36mUnit Load (0.0ms)[0m  [1mSELECT  "units".* FROM "units" WHERE "units"."id" = ? LIMIT 1[0m  [["id", 5]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "units".* FROM "units" WHERE "units"."id" = ? LIMIT 1  [["id", 4]]
+  [1m[36mUnit Load (0.0ms)[0m  [1mSELECT  "units".* FROM "units" WHERE "units"."id" = ? LIMIT 1[0m  [["id", 2]]
+  [1m[35mUnit Load (0.0ms)[0m  SELECT  "units".* FROM "units" WHERE "units"."id" = ? LIMIT 1  [["id", 3]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "units".* FROM "units" WHERE "units"."id" = ? LIMIT 1[0m  [["id", 4]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "units".* FROM "units" WHERE "units"."id" = ? LIMIT 1  [["id", 4]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "units".* FROM "units" WHERE "units"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "units".* FROM "units" WHERE "units"."id" = ? LIMIT 1  [["id", 4]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "units".* FROM "units" WHERE "units"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "units".* FROM "units" WHERE "units"."id" = ? LIMIT 1  [["id", 2]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "units".* FROM "units" WHERE "units"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "units".* FROM "units" WHERE "units"."id" = ? LIMIT 1  [["id", 4]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "units".* FROM "units" WHERE "units"."id" = ? LIMIT 1[0m  [["id", 5]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "units".* FROM "units" WHERE "units"."id" = ? LIMIT 1  [["id", 5]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "units".* FROM "units" WHERE "units"."id" = ? LIMIT 1[0m  [["id", 3]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "units".* FROM "units" WHERE "units"."id" = ? LIMIT 1  [["id", 2]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "units".* FROM "units" WHERE "units"."id" = ? LIMIT 1[0m  [["id", 2]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "units".* FROM "units" WHERE "units"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "units".* FROM "units" WHERE "units"."id" = ? LIMIT 1[0m  [["id", 2]]
+  Rendered members/index.html.erb within layouts/application (64.0ms)
+  [1m[35mUser Load (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+Completed 200 OK in 287ms (Views: 258.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/home.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-10-09 14:25:33 +0900
+
+
+Started GET "/assets/articles.self-ab5245ff89858fff42f132dc9e7636af5282b91259c78dbd89acf7c8a00e04b6.css?body=1" for ::1 at 2015-10-09 14:25:33 +0900
+
+
+Started GET "/assets/members.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-10-09 14:25:33 +0900
+
+
+Started GET "/assets/requestmembers.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-10-09 14:25:33 +0900
+
+
+Started GET "/assets/units.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-10-09 14:25:33 +0900
+
+
+Started GET "/assets/scaffolds.self-7884b308dea2795f99f453a71c4f5be52ef7990fd2bde2d9832c8c1ad69c8fc9.css?body=1" for ::1 at 2015-10-09 14:25:33 +0900
+
+
+Started GET "/assets/application.self-b64d55e512d58ff0e7778e2cdddbdb336c287031d0f7c904ec6d4b3ed80bbb55.css?body=1" for ::1 at 2015-10-09 14:25:33 +0900
+
+
+Started GET "/assets/searcharticles.self-21a057e7082c4409604501cac3809366102aeaea6e27fed2b97c25a6616d40d5.css?body=1" for ::1 at 2015-10-09 14:25:33 +0900
+
+
+Started GET "/assets/jquery.self-a714331225dda820228db323939889f149aec0127aeb06255646b616ba1ca419.js?body=1" for ::1 at 2015-10-09 14:25:33 +0900
+
+
+Started GET "/assets/jquery_ujs.self-d456baa54c1fa6be2ec3711f0a72ddf7a5b2f34a6b4f515f33767d6207b7d4b3.js?body=1" for ::1 at 2015-10-09 14:25:33 +0900
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2015-10-09 14:25:33 +0900
+
+
+Started GET "/assets/articles.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-10-09 14:25:33 +0900
+
+
+Started GET "/assets/home.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-10-09 14:25:33 +0900
+
+
+Started GET "/assets/members.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-10-09 14:25:33 +0900
+
+
+Started GET "/assets/requestmembers.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-10-09 14:25:33 +0900
+
+
+Started GET "/assets/searcharticles.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-10-09 14:25:33 +0900
+
+
+Started GET "/assets/units.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-10-09 14:25:33 +0900
+
+
+Started GET "/assets/jquery_nested_form.self-d38045d10ebdd28aac44152cb451796232091957b86b47bedad1ab171a3a12cd.js?body=1" for ::1 at 2015-10-09 14:25:34 +0900
+
+
+Started GET "/assets/application.self-f8806224e027f3e3f0138ea9ce99319e298dfdb323304d1f1be6eae8e8c74724.js?body=1" for ::1 at 2015-10-09 14:25:34 +0900
+
+
+Started GET "/" for ::1 at 2015-10-09 15:59:06 +0900
+  [1m[36mActiveRecord::SchemaMigration Load (0.0ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by ArticlesController#index as HTML
+  [1m[35mArticle Load (1.0ms)[0m  SELECT  "articles".* FROM "articles"  ORDER BY id DESC, "articles"."id" ASC LIMIT 10 OFFSET 0
+  [1m[36mUser Load (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mMember Load (0.0ms)[0m  SELECT  "members".* FROM "members" WHERE "members"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mMember Load (1.0ms)[0m  [1mSELECT "members".* FROM "members" INNER JOIN "requestmembers" ON "members"."id" = "requestmembers"."member_id" WHERE "requestmembers"."article_id" = ?[0m  [["article_id", 13]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mMember Load (0.0ms)[0m  [1mSELECT  "members".* FROM "members" WHERE "members"."id" = ? LIMIT 1[0m  [["id", 2]]
+  [1m[35mMember Load (1.0ms)[0m  SELECT "members".* FROM "members" INNER JOIN "requestmembers" ON "members"."id" = "requestmembers"."member_id" WHERE "requestmembers"."article_id" = ?  [["article_id", 12]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "members".* FROM "members" WHERE "members"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mMember Load (0.0ms)[0m  [1mSELECT "members".* FROM "members" INNER JOIN "requestmembers" ON "members"."id" = "requestmembers"."member_id" WHERE "requestmembers"."article_id" = ?[0m  [["article_id", 11]]
+  [1m[35mCACHE (1.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "members".* FROM "members" WHERE "members"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mMember Load (1.0ms)[0m  SELECT "members".* FROM "members" INNER JOIN "requestmembers" ON "members"."id" = "requestmembers"."member_id" WHERE "requestmembers"."article_id" = ?  [["article_id", 10]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "members".* FROM "members" WHERE "members"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mMember Load (0.0ms)[0m  [1mSELECT "members".* FROM "members" INNER JOIN "requestmembers" ON "members"."id" = "requestmembers"."member_id" WHERE "requestmembers"."article_id" = ?[0m  [["article_id", 9]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "members".* FROM "members" WHERE "members"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mMember Load (0.0ms)[0m  SELECT "members".* FROM "members" INNER JOIN "requestmembers" ON "members"."id" = "requestmembers"."member_id" WHERE "requestmembers"."article_id" = ?  [["article_id", 8]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "members".* FROM "members" WHERE "members"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mMember Load (0.0ms)[0m  [1mSELECT "members".* FROM "members" INNER JOIN "requestmembers" ON "members"."id" = "requestmembers"."member_id" WHERE "requestmembers"."article_id" = ?[0m  [["article_id", 7]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "members".* FROM "members" WHERE "members"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mMember Load (0.0ms)[0m  SELECT "members".* FROM "members" INNER JOIN "requestmembers" ON "members"."id" = "requestmembers"."member_id" WHERE "requestmembers"."article_id" = ?  [["article_id", 6]]
+  [1m[36mCACHE (1.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "members".* FROM "members" WHERE "members"."id" = ? LIMIT 1  [["id", 2]]
+  [1m[36mMember Load (0.0ms)[0m  [1mSELECT "members".* FROM "members" INNER JOIN "requestmembers" ON "members"."id" = "requestmembers"."member_id" WHERE "requestmembers"."article_id" = ?[0m  [["article_id", 5]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "members".* FROM "members" WHERE "members"."id" = ? LIMIT 1[0m  [["id", 2]]
+  [1m[35mMember Load (1.0ms)[0m  SELECT "members".* FROM "members" INNER JOIN "requestmembers" ON "members"."id" = "requestmembers"."member_id" WHERE "requestmembers"."article_id" = ?  [["article_id", 4]]
+  [1m[36m (0.0ms)[0m  [1mSELECT COUNT(*) FROM "articles"[0m
+  Rendered articles/index.html.erb within layouts/application (206.0ms)
+  [1m[35mUser Load (1.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+Completed 200 OK in 783ms (Views: 702.0ms | ActiveRecord: 8.0ms)
+
+
+Started GET "/" for ::1 at 2015-10-09 15:59:07 +0900
+Processing by ArticlesController#index as HTML
+  [1m[36mArticle Load (0.0ms)[0m  [1mSELECT  "articles".* FROM "articles"  ORDER BY id DESC, "articles"."id" ASC LIMIT 10 OFFSET 0[0m
+  [1m[35mUser Load (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mMember Load (0.0ms)[0m  [1mSELECT  "members".* FROM "members" WHERE "members"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mMember Load (0.0ms)[0m  SELECT "members".* FROM "members" INNER JOIN "requestmembers" ON "members"."id" = "requestmembers"."member_id" WHERE "requestmembers"."article_id" = ?  [["article_id", 13]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mMember Load (0.0ms)[0m  SELECT  "members".* FROM "members" WHERE "members"."id" = ? LIMIT 1  [["id", 2]]
+  [1m[36mMember Load (0.0ms)[0m  [1mSELECT "members".* FROM "members" INNER JOIN "requestmembers" ON "members"."id" = "requestmembers"."member_id" WHERE "requestmembers"."article_id" = ?[0m  [["article_id", 12]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "members".* FROM "members" WHERE "members"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mMember Load (0.0ms)[0m  SELECT "members".* FROM "members" INNER JOIN "requestmembers" ON "members"."id" = "requestmembers"."member_id" WHERE "requestmembers"."article_id" = ?  [["article_id", 11]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "members".* FROM "members" WHERE "members"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mMember Load (0.0ms)[0m  [1mSELECT "members".* FROM "members" INNER JOIN "requestmembers" ON "members"."id" = "requestmembers"."member_id" WHERE "requestmembers"."article_id" = ?[0m  [["article_id", 10]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "members".* FROM "members" WHERE "members"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mMember Load (0.0ms)[0m  SELECT "members".* FROM "members" INNER JOIN "requestmembers" ON "members"."id" = "requestmembers"."member_id" WHERE "requestmembers"."article_id" = ?  [["article_id", 9]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "members".* FROM "members" WHERE "members"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mMember Load (0.0ms)[0m  [1mSELECT "members".* FROM "members" INNER JOIN "requestmembers" ON "members"."id" = "requestmembers"."member_id" WHERE "requestmembers"."article_id" = ?[0m  [["article_id", 8]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "members".* FROM "members" WHERE "members"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mMember Load (1.0ms)[0m  SELECT "members".* FROM "members" INNER JOIN "requestmembers" ON "members"."id" = "requestmembers"."member_id" WHERE "requestmembers"."article_id" = ?  [["article_id", 7]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "members".* FROM "members" WHERE "members"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mMember Load (1.0ms)[0m  [1mSELECT "members".* FROM "members" INNER JOIN "requestmembers" ON "members"."id" = "requestmembers"."member_id" WHERE "requestmembers"."article_id" = ?[0m  [["article_id", 6]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "members".* FROM "members" WHERE "members"."id" = ? LIMIT 1[0m  [["id", 2]]
+  [1m[35mMember Load (0.0ms)[0m  SELECT "members".* FROM "members" INNER JOIN "requestmembers" ON "members"."id" = "requestmembers"."member_id" WHERE "requestmembers"."article_id" = ?  [["article_id", 5]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "members".* FROM "members" WHERE "members"."id" = ? LIMIT 1  [["id", 2]]
+  [1m[36mMember Load (0.0ms)[0m  [1mSELECT "members".* FROM "members" INNER JOIN "requestmembers" ON "members"."id" = "requestmembers"."member_id" WHERE "requestmembers"."article_id" = ?[0m  [["article_id", 4]]
+  [1m[35m (0.0ms)[0m  SELECT COUNT(*) FROM "articles"
+  Rendered articles/index.html.erb within layouts/application (55.0ms)
+  [1m[36mUser Load (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+Completed 200 OK in 264ms (Views: 261.0ms | ActiveRecord: 2.0ms)
+
+
+Started GET "/assets/home.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-10-09 15:59:07 +0900
+
+
+Started GET "/assets/articles.self-ab5245ff89858fff42f132dc9e7636af5282b91259c78dbd89acf7c8a00e04b6.css?body=1" for ::1 at 2015-10-09 15:59:07 +0900
+
+
+Started GET "/assets/requestmembers.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-10-09 15:59:07 +0900
+
+
+Started GET "/assets/members.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-10-09 15:59:07 +0900
+
+
+Started GET "/assets/scaffolds.self-7884b308dea2795f99f453a71c4f5be52ef7990fd2bde2d9832c8c1ad69c8fc9.css?body=1" for ::1 at 2015-10-09 15:59:07 +0900
+
+
+Started GET "/assets/units.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-10-09 15:59:07 +0900
+
+
+Started GET "/assets/searcharticles.self-21a057e7082c4409604501cac3809366102aeaea6e27fed2b97c25a6616d40d5.css?body=1" for ::1 at 2015-10-09 15:59:07 +0900
+
+
+Started GET "/assets/application.self-b64d55e512d58ff0e7778e2cdddbdb336c287031d0f7c904ec6d4b3ed80bbb55.css?body=1" for ::1 at 2015-10-09 15:59:07 +0900
+
+
+Started GET "/assets/jquery.self-a714331225dda820228db323939889f149aec0127aeb06255646b616ba1ca419.js?body=1" for ::1 at 2015-10-09 15:59:07 +0900
+
+
+Started GET "/assets/jquery_ujs.self-d456baa54c1fa6be2ec3711f0a72ddf7a5b2f34a6b4f515f33767d6207b7d4b3.js?body=1" for ::1 at 2015-10-09 15:59:07 +0900
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2015-10-09 15:59:08 +0900
+
+
+Started GET "/assets/articles.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-10-09 15:59:08 +0900
+
+
+Started GET "/assets/home.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-10-09 15:59:08 +0900
+
+
+Started GET "/assets/members.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-10-09 15:59:08 +0900
+
+
+Started GET "/assets/requestmembers.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-10-09 15:59:08 +0900
+
+
+Started GET "/assets/searcharticles.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-10-09 15:59:08 +0900
+
+
+Started GET "/assets/units.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-10-09 15:59:08 +0900
+
+
+Started GET "/assets/jquery_nested_form.self-d38045d10ebdd28aac44152cb451796232091957b86b47bedad1ab171a3a12cd.js?body=1" for ::1 at 2015-10-09 15:59:08 +0900
+
+
+Started GET "/assets/application.self-f8806224e027f3e3f0138ea9ce99319e298dfdb323304d1f1be6eae8e8c74724.js?body=1" for ::1 at 2015-10-09 15:59:08 +0900
+
+
+Started GET "/uploads/article/obverse_photo/12/thumb_from_rocky_ebi_hina_since_2011_01_01_until_2013_09_01___Twitter__.png" for ::1 at 2015-10-09 15:59:08 +0900
+
+ActionController::RoutingError (No route matches [GET] "/uploads/article/obverse_photo/12/thumb_from_rocky_ebi_hina_since_2011_01_01_until_2013_09_01___Twitter__.png"):
+  actionpack (4.2.4) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  web-console (2.2.1) lib/web_console/middleware.rb:39:in `call'
+  actionpack (4.2.4) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.4) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.4) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.4) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.4) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.4) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.4) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.4) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.4) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.4) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.4) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.4) lib/action_dispatch/middleware/static.rb:116:in `call'
+  rack (1.6.4) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.4) lib/rails/engine.rb:518:in `call'
+  railties (4.2.4) lib/rails/application.rb:165:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  rack (1.6.4) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.4) lib/rack/handler/webrick.rb:88:in `service'
+  c:/Ruby21-x64/lib/ruby/2.1.0/webrick/httpserver.rb:138:in `service'
+  c:/Ruby21-x64/lib/ruby/2.1.0/webrick/httpserver.rb:94:in `run'
+  c:/Ruby21-x64/lib/ruby/2.1.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered c:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.0ms)
+  Rendered c:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/routes/_route.html.erb (19.0ms)
+  Rendered c:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/routes/_table.html.erb (25.0ms)
+  Rendered c:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (2.0ms)
+  Rendered c:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (143.0ms)
+  Rendered c:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/web-console-2.2.1/lib/web_console/templates/_markup.html.erb (1.0ms)
+  Rendered c:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/web-console-2.2.1/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (1.0ms)
+  Rendered c:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/web-console-2.2.1/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (1.0ms)
+  Rendered c:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/web-console-2.2.1/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.0ms)
+  Rendered c:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/web-console-2.2.1/lib/web_console/templates/console.js.erb within layouts/javascript (44.0ms)
+  Rendered c:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/web-console-2.2.1/lib/web_console/templates/main.js.erb within layouts/javascript (0.0ms)
+  Rendered c:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/web-console-2.2.1/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.0ms)
+  Rendered c:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/web-console-2.2.1/lib/web_console/templates/index.html.erb (96.0ms)
+  [1m[36mArticle Load (0.0ms)[0m  [1mSELECT "articles".* FROM "articles" WHERE ("articles"."close_flag" != ?)[0m  [["close_flag", "f"]]
+  [1m[35mArticle Load (0.0ms)[0m  SELECT "articles".* FROM "articles" WHERE ("articles"."close_flag" != ?)  [["close_flag", "t"]]
+
+
+Started GET "/" for ::1 at 2015-10-09 17:04:35 +0900
+  [1m[36mActiveRecord::SchemaMigration Load (0.0ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by ArticlesController#index as HTML
+Completed 500 Internal Server Error in 70ms (ActiveRecord: 0.0ms)
+
+ArgumentError (wrong number of arguments (0 for 1)):
+  app/models/article.rb:17:in `block in <class:Article>'
+  app/models/article.rb:21:in `search'
+  app/controllers/articles_controller.rb:7:in `index'
+
+
+  Rendered c:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_source.erb (1.0ms)
+  Rendered c:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (4.0ms)
+  Rendered c:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.0ms)
+  Rendered c:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (43.0ms)
+  Rendered c:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/web-console-2.2.1/lib/web_console/templates/_markup.html.erb (1.0ms)
+  Rendered c:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/web-console-2.2.1/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.0ms)
+  Rendered c:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/web-console-2.2.1/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.0ms)
+  Rendered c:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/web-console-2.2.1/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.0ms)
+  Rendered c:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/web-console-2.2.1/lib/web_console/templates/console.js.erb within layouts/javascript (44.0ms)
+  Rendered c:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/web-console-2.2.1/lib/web_console/templates/main.js.erb within layouts/javascript (1.0ms)
+  Rendered c:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/web-console-2.2.1/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.0ms)
+  Rendered c:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/web-console-2.2.1/lib/web_console/templates/index.html.erb (94.0ms)
+
+
+Started GET "/" for ::1 at 2015-10-09 17:04:36 +0900
+Processing by ArticlesController#index as HTML
+Completed 500 Internal Server Error in 2ms (ActiveRecord: 0.0ms)
+
+ArgumentError (wrong number of arguments (0 for 1)):
+  app/models/article.rb:17:in `block in <class:Article>'
+  app/models/article.rb:21:in `search'
+  app/controllers/articles_controller.rb:7:in `index'
+
+
+  Rendered c:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_source.erb (1.0ms)
+  Rendered c:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (4.0ms)
+  Rendered c:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.0ms)
+  Rendered c:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (37.0ms)
+  Rendered c:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/web-console-2.2.1/lib/web_console/templates/_markup.html.erb (1.0ms)
+  Rendered c:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/web-console-2.2.1/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (1.0ms)
+  Rendered c:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/web-console-2.2.1/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (1.0ms)
+  Rendered c:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/web-console-2.2.1/lib/web_console/templates/style.css.erb within layouts/inlined_string (1.0ms)
+  Rendered c:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/web-console-2.2.1/lib/web_console/templates/console.js.erb within layouts/javascript (43.0ms)
+  Rendered c:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/web-console-2.2.1/lib/web_console/templates/main.js.erb within layouts/javascript (0.0ms)
+  Rendered c:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/web-console-2.2.1/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.0ms)
+  Rendered c:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/web-console-2.2.1/lib/web_console/templates/index.html.erb (86.0ms)
+
+
+Started GET "/" for ::1 at 2015-10-09 17:17:16 +0900
+Processing by ArticlesController#index as HTML
+Completed 500 Internal Server Error in 29ms (ActiveRecord: 0.0ms)
+
+NameError (undefined local variable or method `current_user' for #<Class:0x00000008b600f0>):
+  app/models/article.rb:21:in `search'
+  app/controllers/articles_controller.rb:7:in `index'
+
+
+  Rendered c:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_source.erb (1.0ms)
+  Rendered c:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.0ms)
+  Rendered c:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.0ms)
+  Rendered c:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (36.0ms)
+  Rendered c:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/web-console-2.2.1/lib/web_console/templates/_markup.html.erb (1.0ms)
+  Rendered c:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/web-console-2.2.1/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (1.0ms)
+  Rendered c:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/web-console-2.2.1/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.0ms)
+  Rendered c:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/web-console-2.2.1/lib/web_console/templates/style.css.erb within layouts/inlined_string (1.0ms)
+  Rendered c:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/web-console-2.2.1/lib/web_console/templates/console.js.erb within layouts/javascript (33.0ms)
+  Rendered c:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/web-console-2.2.1/lib/web_console/templates/main.js.erb within layouts/javascript (1.0ms)
+  Rendered c:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/web-console-2.2.1/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.0ms)
+  Rendered c:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/web-console-2.2.1/lib/web_console/templates/index.html.erb (66.0ms)
+
+
+Started GET "/" for ::1 at 2015-10-09 17:18:30 +0900
+Processing by ArticlesController#index as HTML
+Completed 500 Internal Server Error in 19ms (ActiveRecord: 0.0ms)
+
+NoMethodError (undefined method `current_user?' for #<Class:0x00000008797108>):
+  app/models/article.rb:21:in `search'
+  app/controllers/articles_controller.rb:7:in `index'
+
+
+  Rendered c:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.0ms)
+  Rendered c:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.0ms)
+  Rendered c:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.0ms)
+  Rendered c:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (36.0ms)
+  Rendered c:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/web-console-2.2.1/lib/web_console/templates/_markup.html.erb (0.0ms)
+  Rendered c:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/web-console-2.2.1/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.0ms)
+  Rendered c:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/web-console-2.2.1/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (1.0ms)
+  Rendered c:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/web-console-2.2.1/lib/web_console/templates/style.css.erb within layouts/inlined_string (1.0ms)
+  Rendered c:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/web-console-2.2.1/lib/web_console/templates/console.js.erb within layouts/javascript (33.0ms)
+  Rendered c:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/web-console-2.2.1/lib/web_console/templates/main.js.erb within layouts/javascript (0.0ms)
+  Rendered c:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/web-console-2.2.1/lib/web_console/templates/error_page.js.erb within layouts/javascript (1.0ms)
+  Rendered c:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/web-console-2.2.1/lib/web_console/templates/index.html.erb (68.0ms)
+
+
+Started GET "/" for ::1 at 2015-10-09 17:18:55 +0900
+Processing by ArticlesController#index as HTML
+  [1m[35mArticle Load (0.0ms)[0m  SELECT  "articles".* FROM "articles" WHERE "articles"."close_flag" = ?  ORDER BY id DESC, "articles"."id" ASC LIMIT 10 OFFSET 0  [["close_flag", "f"]]
+  [1m[36mUser Load (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mMember Load (1.0ms)[0m  SELECT  "members".* FROM "members" WHERE "members"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mMember Load (1.0ms)[0m  [1mSELECT "members".* FROM "members" INNER JOIN "requestmembers" ON "members"."id" = "requestmembers"."member_id" WHERE "requestmembers"."article_id" = ?[0m  [["article_id", 13]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mMember Load (1.0ms)[0m  [1mSELECT  "members".* FROM "members" WHERE "members"."id" = ? LIMIT 1[0m  [["id", 2]]
+  [1m[35mMember Load (0.0ms)[0m  SELECT "members".* FROM "members" INNER JOIN "requestmembers" ON "members"."id" = "requestmembers"."member_id" WHERE "requestmembers"."article_id" = ?  [["article_id", 12]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "members".* FROM "members" WHERE "members"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mMember Load (0.0ms)[0m  [1mSELECT "members".* FROM "members" INNER JOIN "requestmembers" ON "members"."id" = "requestmembers"."member_id" WHERE "requestmembers"."article_id" = ?[0m  [["article_id", 11]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "members".* FROM "members" WHERE "members"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mMember Load (0.0ms)[0m  SELECT "members".* FROM "members" INNER JOIN "requestmembers" ON "members"."id" = "requestmembers"."member_id" WHERE "requestmembers"."article_id" = ?  [["article_id", 10]]
+  [1m[36mCACHE (1.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "members".* FROM "members" WHERE "members"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mMember Load (0.0ms)[0m  [1mSELECT "members".* FROM "members" INNER JOIN "requestmembers" ON "members"."id" = "requestmembers"."member_id" WHERE "requestmembers"."article_id" = ?[0m  [["article_id", 9]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "members".* FROM "members" WHERE "members"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mMember Load (0.0ms)[0m  SELECT "members".* FROM "members" INNER JOIN "requestmembers" ON "members"."id" = "requestmembers"."member_id" WHERE "requestmembers"."article_id" = ?  [["article_id", 8]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "members".* FROM "members" WHERE "members"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mMember Load (1.0ms)[0m  [1mSELECT "members".* FROM "members" INNER JOIN "requestmembers" ON "members"."id" = "requestmembers"."member_id" WHERE "requestmembers"."article_id" = ?[0m  [["article_id", 7]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "members".* FROM "members" WHERE "members"."id" = ? LIMIT 1[0m  [["id", 2]]
+  [1m[35mMember Load (1.0ms)[0m  SELECT "members".* FROM "members" INNER JOIN "requestmembers" ON "members"."id" = "requestmembers"."member_id" WHERE "requestmembers"."article_id" = ?  [["article_id", 5]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "members".* FROM "members" WHERE "members"."id" = ? LIMIT 1  [["id", 2]]
+  [1m[36mMember Load (1.0ms)[0m  [1mSELECT "members".* FROM "members" INNER JOIN "requestmembers" ON "members"."id" = "requestmembers"."member_id" WHERE "requestmembers"."article_id" = ?[0m  [["article_id", 4]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "members".* FROM "members" WHERE "members"."id" = ? LIMIT 1[0m  [["id", 2]]
+  [1m[35mMember Load (0.0ms)[0m  SELECT "members".* FROM "members" INNER JOIN "requestmembers" ON "members"."id" = "requestmembers"."member_id" WHERE "requestmembers"."article_id" = ?  [["article_id", 3]]
+  [1m[36m (0.0ms)[0m  [1mSELECT COUNT(*) FROM "articles" WHERE "articles"."close_flag" = ?[0m  [["close_flag", "f"]]
+  Rendered articles/index.html.erb within layouts/application (222.0ms)
+  [1m[35mUser Load (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+Completed 200 OK in 750ms (Views: 720.0ms | ActiveRecord: 8.0ms)
+
+
+Started GET "/assets/articles.self-ab5245ff89858fff42f132dc9e7636af5282b91259c78dbd89acf7c8a00e04b6.css?body=1" for ::1 at 2015-10-09 17:18:56 +0900
+
+
+Started GET "/assets/home.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-10-09 17:18:56 +0900
+
+
+Started GET "/assets/members.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-10-09 17:18:56 +0900
+
+
+Started GET "/assets/requestmembers.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-10-09 17:18:56 +0900
+
+
+Started GET "/assets/scaffolds.self-7884b308dea2795f99f453a71c4f5be52ef7990fd2bde2d9832c8c1ad69c8fc9.css?body=1" for ::1 at 2015-10-09 17:18:56 +0900
+
+
+Started GET "/assets/units.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-10-09 17:18:56 +0900
+
+
+Started GET "/assets/searcharticles.self-21a057e7082c4409604501cac3809366102aeaea6e27fed2b97c25a6616d40d5.css?body=1" for ::1 at 2015-10-09 17:18:56 +0900
+
+
+Started GET "/assets/application.self-b64d55e512d58ff0e7778e2cdddbdb336c287031d0f7c904ec6d4b3ed80bbb55.css?body=1" for ::1 at 2015-10-09 17:18:56 +0900
+
+
+Started GET "/assets/jquery.self-a714331225dda820228db323939889f149aec0127aeb06255646b616ba1ca419.js?body=1" for ::1 at 2015-10-09 17:18:56 +0900
+
+
+Started GET "/assets/jquery_ujs.self-d456baa54c1fa6be2ec3711f0a72ddf7a5b2f34a6b4f515f33767d6207b7d4b3.js?body=1" for ::1 at 2015-10-09 17:18:56 +0900
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2015-10-09 17:18:56 +0900
+
+
+Started GET "/assets/articles.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-10-09 17:18:56 +0900
+
+
+Started GET "/assets/home.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-10-09 17:18:56 +0900
+
+
+Started GET "/assets/members.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-10-09 17:18:56 +0900
+
+
+Started GET "/assets/requestmembers.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-10-09 17:18:56 +0900
+
+
+Started GET "/assets/searcharticles.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-10-09 17:18:56 +0900
+
+
+Started GET "/assets/units.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-10-09 17:18:56 +0900
+
+
+Started GET "/assets/jquery_nested_form.self-d38045d10ebdd28aac44152cb451796232091957b86b47bedad1ab171a3a12cd.js?body=1" for ::1 at 2015-10-09 17:18:56 +0900
+
+
+Started GET "/assets/application.self-f8806224e027f3e3f0138ea9ce99319e298dfdb323304d1f1be6eae8e8c74724.js?body=1" for ::1 at 2015-10-09 17:18:56 +0900
+
+
+Started GET "/uploads/article/obverse_photo/12/thumb_from_rocky_ebi_hina_since_2011_01_01_until_2013_09_01___Twitter__.png" for ::1 at 2015-10-09 17:18:56 +0900
+
+ActionController::RoutingError (No route matches [GET] "/uploads/article/obverse_photo/12/thumb_from_rocky_ebi_hina_since_2011_01_01_until_2013_09_01___Twitter__.png"):
+  actionpack (4.2.4) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  web-console (2.2.1) lib/web_console/middleware.rb:39:in `call'
+  actionpack (4.2.4) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.4) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.4) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.4) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.4) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.4) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.4) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.4) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.4) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.4) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.4) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.4) lib/action_dispatch/middleware/static.rb:116:in `call'
+  rack (1.6.4) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.4) lib/rails/engine.rb:518:in `call'
+  railties (4.2.4) lib/rails/application.rb:165:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  rack (1.6.4) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.4) lib/rack/handler/webrick.rb:88:in `service'
+  c:/Ruby21-x64/lib/ruby/2.1.0/webrick/httpserver.rb:138:in `service'
+  c:/Ruby21-x64/lib/ruby/2.1.0/webrick/httpserver.rb:94:in `run'
+  c:/Ruby21-x64/lib/ruby/2.1.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered c:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.0ms)
+  Rendered c:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/routes/_route.html.erb (7.0ms)
+  Rendered c:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/routes/_table.html.erb (35.0ms)
+  Rendered c:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (2.0ms)
+  Rendered c:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (139.0ms)
+  Rendered c:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/web-console-2.2.1/lib/web_console/templates/_markup.html.erb (0.0ms)
+  Rendered c:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/web-console-2.2.1/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (1.0ms)
+  Rendered c:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/web-console-2.2.1/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.0ms)
+  Rendered c:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/web-console-2.2.1/lib/web_console/templates/style.css.erb within layouts/inlined_string (1.0ms)
+  Rendered c:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/web-console-2.2.1/lib/web_console/templates/console.js.erb within layouts/javascript (32.0ms)
+  Rendered c:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/web-console-2.2.1/lib/web_console/templates/main.js.erb within layouts/javascript (0.0ms)
+  Rendered c:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/web-console-2.2.1/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.0ms)
+  Rendered c:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/web-console-2.2.1/lib/web_console/templates/index.html.erb (67.0ms)
+
+
+Started GET "/articles?page=2" for ::1 at 2015-10-09 17:19:00 +0900
+Processing by ArticlesController#index as HTML
+  Parameters: {"page"=>"2"}
+  [1m[36mArticle Load (0.0ms)[0m  [1mSELECT  "articles".* FROM "articles" WHERE "articles"."close_flag" = ?  ORDER BY id DESC, "articles"."id" ASC LIMIT 10 OFFSET 10[0m  [["close_flag", "f"]]
+  [1m[35mUser Load (1.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mMember Load (0.0ms)[0m  [1mSELECT  "members".* FROM "members" WHERE "members"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mMember Load (0.0ms)[0m  SELECT "members".* FROM "members" INNER JOIN "requestmembers" ON "members"."id" = "requestmembers"."member_id" WHERE "requestmembers"."article_id" = ?  [["article_id", 2]]
+  [1m[36m (0.0ms)[0m  [1mSELECT COUNT(*) FROM "articles" WHERE "articles"."close_flag" = ?[0m  [["close_flag", "f"]]
+  Rendered articles/index.html.erb within layouts/application (23.6ms)
+  [1m[35mUser Load (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+Completed 200 OK in 208ms (Views: 205.2ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/articles" for ::1 at 2015-10-09 17:19:03 +0900
+Processing by ArticlesController#index as HTML
+  [1m[36mArticle Load (0.0ms)[0m  [1mSELECT  "articles".* FROM "articles" WHERE "articles"."close_flag" = ?  ORDER BY id DESC, "articles"."id" ASC LIMIT 10 OFFSET 0[0m  [["close_flag", "f"]]
+  [1m[35mUser Load (1.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mMember Load (0.0ms)[0m  [1mSELECT  "members".* FROM "members" WHERE "members"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mMember Load (0.0ms)[0m  SELECT "members".* FROM "members" INNER JOIN "requestmembers" ON "members"."id" = "requestmembers"."member_id" WHERE "requestmembers"."article_id" = ?  [["article_id", 13]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mMember Load (0.0ms)[0m  SELECT  "members".* FROM "members" WHERE "members"."id" = ? LIMIT 1  [["id", 2]]
+  [1m[36mMember Load (1.0ms)[0m  [1mSELECT "members".* FROM "members" INNER JOIN "requestmembers" ON "members"."id" = "requestmembers"."member_id" WHERE "requestmembers"."article_id" = ?[0m  [["article_id", 12]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "members".* FROM "members" WHERE "members"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mMember Load (0.0ms)[0m  SELECT "members".* FROM "members" INNER JOIN "requestmembers" ON "members"."id" = "requestmembers"."member_id" WHERE "requestmembers"."article_id" = ?  [["article_id", 11]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "members".* FROM "members" WHERE "members"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mMember Load (0.0ms)[0m  [1mSELECT "members".* FROM "members" INNER JOIN "requestmembers" ON "members"."id" = "requestmembers"."member_id" WHERE "requestmembers"."article_id" = ?[0m  [["article_id", 10]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "members".* FROM "members" WHERE "members"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mMember Load (0.0ms)[0m  SELECT "members".* FROM "members" INNER JOIN "requestmembers" ON "members"."id" = "requestmembers"."member_id" WHERE "requestmembers"."article_id" = ?  [["article_id", 9]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mCACHE (1.0ms)[0m  SELECT  "members".* FROM "members" WHERE "members"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mMember Load (0.0ms)[0m  [1mSELECT "members".* FROM "members" INNER JOIN "requestmembers" ON "members"."id" = "requestmembers"."member_id" WHERE "requestmembers"."article_id" = ?[0m  [["article_id", 8]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "members".* FROM "members" WHERE "members"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mMember Load (0.0ms)[0m  SELECT "members".* FROM "members" INNER JOIN "requestmembers" ON "members"."id" = "requestmembers"."member_id" WHERE "requestmembers"."article_id" = ?  [["article_id", 7]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "members".* FROM "members" WHERE "members"."id" = ? LIMIT 1  [["id", 2]]
+  [1m[36mMember Load (0.0ms)[0m  [1mSELECT "members".* FROM "members" INNER JOIN "requestmembers" ON "members"."id" = "requestmembers"."member_id" WHERE "requestmembers"."article_id" = ?[0m  [["article_id", 5]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "members".* FROM "members" WHERE "members"."id" = ? LIMIT 1[0m  [["id", 2]]
+  [1m[35mMember Load (1.0ms)[0m  SELECT "members".* FROM "members" INNER JOIN "requestmembers" ON "members"."id" = "requestmembers"."member_id" WHERE "requestmembers"."article_id" = ?  [["article_id", 4]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "members".* FROM "members" WHERE "members"."id" = ? LIMIT 1  [["id", 2]]
+  [1m[36mMember Load (0.0ms)[0m  [1mSELECT "members".* FROM "members" INNER JOIN "requestmembers" ON "members"."id" = "requestmembers"."member_id" WHERE "requestmembers"."article_id" = ?[0m  [["article_id", 3]]
+  [1m[35m (0.0ms)[0m  SELECT COUNT(*) FROM "articles" WHERE "articles"."close_flag" = ?  [["close_flag", "f"]]
+  Rendered articles/index.html.erb within layouts/application (67.2ms)
+  [1m[36mUser Load (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+Completed 200 OK in 263ms (Views: 258.8ms | ActiveRecord: 4.0ms)
+
+
+Started GET "/uploads/article/obverse_photo/12/thumb_from_rocky_ebi_hina_since_2011_01_01_until_2013_09_01___Twitter__.png" for ::1 at 2015-10-09 17:19:03 +0900
+
+ActionController::RoutingError (No route matches [GET] "/uploads/article/obverse_photo/12/thumb_from_rocky_ebi_hina_since_2011_01_01_until_2013_09_01___Twitter__.png"):
+  actionpack (4.2.4) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  web-console (2.2.1) lib/web_console/middleware.rb:39:in `call'
+  actionpack (4.2.4) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.4) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.4) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.4) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.4) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.4) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.4) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.4) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.4) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.4) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.4) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.4) lib/action_dispatch/middleware/static.rb:116:in `call'
+  rack (1.6.4) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.4) lib/rails/engine.rb:518:in `call'
+  railties (4.2.4) lib/rails/application.rb:165:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  rack (1.6.4) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.4) lib/rack/handler/webrick.rb:88:in `service'
+  c:/Ruby21-x64/lib/ruby/2.1.0/webrick/httpserver.rb:138:in `service'
+  c:/Ruby21-x64/lib/ruby/2.1.0/webrick/httpserver.rb:94:in `run'
+  c:/Ruby21-x64/lib/ruby/2.1.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered c:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (0.0ms)
+  Rendered c:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/routes/_route.html.erb (15.6ms)
+  Rendered c:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/routes/_table.html.erb (0.0ms)
+  Rendered c:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (15.6ms)
+  Rendered c:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (62.4ms)
+  Rendered c:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/web-console-2.2.1/lib/web_console/templates/_markup.html.erb (0.0ms)
+  Rendered c:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/web-console-2.2.1/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.0ms)
+  Rendered c:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/web-console-2.2.1/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.0ms)
+  Rendered c:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/web-console-2.2.1/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.0ms)
+  Rendered c:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/web-console-2.2.1/lib/web_console/templates/console.js.erb within layouts/javascript (31.2ms)
+  Rendered c:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/web-console-2.2.1/lib/web_console/templates/main.js.erb within layouts/javascript (0.0ms)
+  Rendered c:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/web-console-2.2.1/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.0ms)
+  Rendered c:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/web-console-2.2.1/lib/web_console/templates/index.html.erb (62.4ms)

@@ -13,17 +13,18 @@ class Article < ActiveRecord::Base
 
   scope :has_requestmember_id, -> requestmember_id { joins(:requestmembers).where('requestmembers.member_id = ?', requestmember_id)}
 
+  scope :not_close, -> {where(close_flag: false)}
+  scope :my_article, -> user_id {where(user_id: user_id)}
+
   def self.search(article_search)
 
+    articles = Article.not_close
+
     if article_search
-      puts 'search'
-      articles = Article.all
       articles = articles.where(member_id: article_search[:member_id]) if article_search[:member_id].present?
       articles = articles.has_requestmember_id(article_search[:requestmember_id]) if article_search[:requestmember_id].present?
 
     else
-      puts 'all'
-      articles = Article.all
     end
 
     articles.order('id DESC')
