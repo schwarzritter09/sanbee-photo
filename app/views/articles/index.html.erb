@@ -23,10 +23,10 @@
             <%= requestmember.name %> <br>
           <% end %>
         </td>
-        <% if article.obverse_photo %>
+        <% if article.obverse_photo ? %>
           <td><%= link_to image_tag(article.obverse_photo.thumb.url), article %></td>
         <% else %>
-          <td>詳細を見る</td>
+          <td><%= link_to '詳細を見る', article %></td>
         <% end %>
       </tr>
     <% end %>
