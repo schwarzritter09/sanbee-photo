@@ -40,6 +40,7 @@ class ArticlesController < ApplicationController
 
     @article = Article.new(article_params)
     @article.user_id = current_user.id
+    @article.close_flag = false
 
     respond_to do |format|
       if @article.save
