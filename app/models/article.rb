@@ -23,6 +23,7 @@ class Article < ActiveRecord::Base
     if article_search
       articles = articles.where(member_id: article_search[:member_id]) if article_search[:member_id].present?
       articles = articles.has_requestmember_id(article_search[:requestmember_id]) if article_search[:requestmember_id].present?
+      articles = articles.where(user_id: article_search[:user_id]) if article_search[:user_id].present?
 
     else
     end
