@@ -16,14 +16,17 @@
     <% @articles.each do |article| %>
       <tr class="<%= article.close_flag ? 'closed' : 'not_close' %> <%= cycle("even", "odd") %>">
         <td><%= article.message %></td>
-        <td><%= link_to article.user.username, "http://twitter.com/#{article.user.username}" %></td>
+        <td>
+          <a href="https://twitter.com/intent/tweet?screen_name=<%= article.user.username %>&text=<%= url_for :controller => 'articles', :action => 'show', :id => article.id, :only_path => false %>" class="twitter-mention-button" data-lang="ja">Tweet to <%= article.user.username %></a>
+          <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
+        </td>
         <td><%= article.member.name %></td>
         <td>
           <% article.members.each do |requestmember| %>
             <%= requestmember.name %> <br>
           <% end %>
         </td>
-        <% if article.obverse_photo ? %>
+        <% if article.obverse_photo.present? %>
           <td><%= link_to image_tag(article.obverse_photo.thumb.url), article %></td>
         <% else %>
           <td><%= link_to '詳細を見る', article %></td>
