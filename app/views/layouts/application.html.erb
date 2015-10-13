@@ -8,16 +8,29 @@
 </head>
 <body>
 <div class="header">
-  <%= link_to image_tag(asset_path('list.png'), { :border => '0', :alt => 'トップへ'}), articles_path %>
+  <span class="header_icon">
+    <%= link_to image_tag(asset_path('list.png'), { :border => '0', :alt => 'トップへ'}), articles_path %>
+    トップへ
+  </span>
   <% if user_signed_in? %>
+  <span class="header_icon">
     <%= link_to image_tag(asset_path('logined.png'), { :border => '0', :alt => 'ログオフ'}), destroy_user_session_path %>
+    ログオフ
   <% else %>
     <%= link_to image_tag(asset_path('not_logined.png'), { :border => '0', :alt => 'ログイン'}), user_omniauth_authorize_path(:twitter) %>
+    ログイン
+  </span class="header_icon">
   <% end %>
   <% if user_signed_in? %>
+  <span class="header_icon">
     <%= link_to image_tag(asset_path('new.png'), { :border => '0', :alt => '新規投稿'}), new_article_path %>
+    新規投稿
+  </span>
   <% end %>
-  <%= link_to image_tag(asset_path('search.png'), { :border => '0', :alt => '検索'}), searcharticles_path %>
+  <span class="header_icon">
+    <%= link_to image_tag(asset_path('search.png'), { :border => '0', :alt => '検索'}), searcharticles_path %>
+    検索
+  </span>
 </div>
 <p class="notice"><%= notice %></p>
 <p class="alert"><%= alert %></p>
