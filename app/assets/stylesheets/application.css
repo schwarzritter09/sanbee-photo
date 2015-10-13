@@ -23,6 +23,15 @@ BODY {
 	background-color: #CCFFFF;
 }
 
+.header_icon {
+	display: inline-block;
+    text-align: center;
+}
+
+.header_icon a{
+	text-decoration: none;
+}
+
 table {
 	width: 100%;
 }
