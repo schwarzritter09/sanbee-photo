@@ -1,6 +1,6 @@
 <%= nested_form_for(@article) do |f| %>
   <%
-      @members = Member.all.map{|m| [m.name, m.id]}
+      @members = Member.order_by_unit_kana.map{|m| [m.name, m.id]}
   %>
   <% if @article.errors.any? %>
     <div id="error_explanation">

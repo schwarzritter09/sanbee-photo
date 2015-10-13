@@ -10,9 +10,21 @@ require "csv"
 
 
 CSV.foreach('db/unit.csv') do |row|
-  Unit.where(:id => row[0]).first_or_create(:id => row[0], :name => row[1])
+  unit = Unit.find(row[0])
+  
+  if unit.present?
+    unit.update_attributes(:name => row[1])
+  else
+    Unit.create(:id => row[0], :name => row[1])
+  end
 end
 
 CSV.foreach('db/member.csv') do |row|
-  Member.where(:id => row[0]).first_or_create(:id => row[0], :name => row[1], :unit_id => row[2])
+  member = Member.find(row[0])
+  
+  if member.present?
+    member.update_attributes(:name => row[1], :unit_id => row[2], :kana => row[3])
+  else
+    Member.create(:id => row[0], :name => row[1], :unit_id => row[2], :kana => row[3])
+  end
 end
