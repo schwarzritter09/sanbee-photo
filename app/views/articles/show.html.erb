@@ -47,8 +47,7 @@
 <a href="https://twitter.com/intent/tweet?screen_name=<%= @article.user.username %>&text=<%= url_for :controller => 'articles', :action => 'show', :id => @article.id, :only_path => false %>" class="tweetbtn" data-size="large" data-lang="ja">
   @<%= @article.user.username %>さんへツイート
 </a>
-
-<br><br>
+<br>
 <a href="https://twitter.com/share?text=譲:<%= @article.member.name %> 求:<% @article.members.each_with_index do |requestmember, i| %><%= requestmember.name %><%= i+1>=@article.members.count ? '' : ','%><% end %>" class="tweetbtn" data-lang="ja" data-size="large" data-count="none" data-hashtags="3Bjr写真交換">
   ツイート
 </a>
