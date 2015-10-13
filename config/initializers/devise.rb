@@ -261,4 +261,7 @@ Devise.setup do |config|
   # config.omniauth_path_prefix = '/my_engine/users/auth'
 
   config.omniauth :twitter, 'zYrvDAVNm0QRfdGkOVXOh55MX','Efttcdt6pdLeIw1X6hnbX5LrgVRDbc4y0SodePYeBE01DmLjw2'
+
+  config.secret_key = '082feeebd6a58ec414d513de4a9902a4d5de5dbe170fd7ff4c3cb10ade9880e4209602590aa463395bd77680f20dd987ae6471db9b2f53335cf86d0e
+5cd99c90' if Rails.env.production?
 end
