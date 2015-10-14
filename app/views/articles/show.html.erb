@@ -48,7 +48,7 @@
   @<%= @article.user.username %>さんへツイート
 </a>
 <br>
-<a href="https://twitter.com/share?text=【拡散希望】譲:<%= @article.member.name %> 求:<% @article.members.each_with_index do |requestmember, i| %><%= requestmember.name %><%= i+1>=@article.members.count ? '' : ','%><% end %>&url=<%= url_for :controller => 'articles', :action => 'show', :id => @article.id, :only_path => false %>&hashtags=3Bjr写真交換" class="tweetbtn" target="_blank">
+<a href="https://twitter.com/share?text=【拡散希望】譲:<%= @article.member.name %> 求:<% @article.members.each_with_index do |requestmember, i| %><%= requestmember.name %><%= i+1>=@article.members.count ? '' : ','%><% end %>&url=<%= url_for :controller => 'articles', :action => 'show', :id => @article.id, :only_path => false %>&hashtags=3Bjr写真交換" class="tweetbtn" target="_blank" id="tweetbtn">
   拡散ツイート
 </a>
 
@@ -58,3 +58,11 @@
 <%= link_to '削除', @article, method: :delete, data: { confirm: '本当に削除しますか？' } %> |
 <% end %>
 <%= link_to '戻る', articles_path %>
+
+<% if flash[:isSuccess] %>
+<script type="text/javascript">
+  window.onload = function(){
+  	document.getElementById("tweetbtn").click()
+  }
+</script>
+<% end %>

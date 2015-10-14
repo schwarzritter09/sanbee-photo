@@ -32,6 +32,12 @@ ActiveRecord::Schema.define(version: 20151013124401) do
     t.string   "kana"
   end
 
+  create_table "photos", force: :cascade do |t|
+    t.integer  "article_id"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
   create_table "requestmembers", force: :cascade do |t|
     t.integer  "article_id"
     t.integer  "member_id"
