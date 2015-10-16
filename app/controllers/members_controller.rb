@@ -1,4 +1,5 @@
 class MembersController < ApplicationController
+  before_action :is_authorized?
   before_action :set_member, only: [:show, :edit, :update, :destroy]
 
   # GET /members
@@ -70,5 +71,11 @@ class MembersController < ApplicationController
     # Never trust parameters from the scary internet, only allow the white list through.
     def member_params
       params.require(:member).permit(:name, :unit_id)
+    end
+
+    def is_authorized?
+      unless user_signed_in? && current_user.admin_flag?
+        redirect_to root_path
+      end
     end
 end
