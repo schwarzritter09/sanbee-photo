@@ -17,9 +17,7 @@
         <td>
           <%= article.message %>
           <br>
-          <a href="https://twitter.com/intent/tweet?screen_name=<%= article.user.username %>&text=<%= url_for :controller => 'articles', :action => 'show', :id => article.id, :only_path => false %>" class="tweetbtn" target="_blank">
-            @<%= article.user.username %>さんへツイート
-          </a>
+          <%= twitter_mention_tag article %>
         </td>
         <td><%= article.member.name %></td>
         <td>

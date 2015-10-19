@@ -44,13 +44,9 @@
 
 <br><br>
 
-<a href="https://twitter.com/intent/tweet?screen_name=<%= @article.user.username %>&text=<%= url_for :controller => 'articles', :action => 'show', :id => @article.id, :only_path => false %>" class="tweetbtn" data-size="large" data-lang="ja" target="_blank">
-  @<%= @article.user.username %>さんへツイート
-</a>
+<%= twitter_mention_tag @article %>
 <br>
-<a href="https://twitter.com/share?text=【拡散希望】譲:<%= @article.member.name %> 求:<% @article.members.each_with_index do |requestmember, i| %><%= requestmember.name %><%= i+1>=@article.members.count ? '' : ','%><% end %>&url=<%= url_for :controller => 'articles', :action => 'show', :id => @article.id, :only_path => false %>&hashtags=3Bjr写真交換" class="tweetbtn" target="_blank" id="tweetbtn">
-  拡散ツイート
-</a>
+<%= twitter_share_tag @article %>
 
 <br><br>
 <% if user_signed_in? && @article.user_id == current_user.id %>
