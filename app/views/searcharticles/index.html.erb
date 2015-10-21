@@ -9,6 +9,11 @@
   <p>求</p>
   <%= collection_select 'article_search', 'requestmember_id', Member.order_by_unit_kana, :id, :name, :include_blank => true %> <br>
   <br>
+
+  <p>ユーザ名</p>
+  <%= text_field 'article_search', 'user_name' %> <br>
+  <br>
+
   <p>
   <%= submit_tag '検索する' %>
   </p>

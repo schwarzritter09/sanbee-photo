@@ -16,6 +16,8 @@ class Article < ActiveRecord::Base
   scope :not_close, -> {where(close_flag: false)}
   scope :my_article, -> user_id {where(user_id: user_id)}
 
+  scope :by_username, -> username { joins(:user).where('username = ?', username)}
+
   def self.search(article_search)
 
     articles = Article.not_close
@@ -24,6 +26,7 @@ class Article < ActiveRecord::Base
       articles = articles.where(member_id: article_search[:member_id]) if article_search[:member_id].present?
       articles = articles.has_requestmember_id(article_search[:requestmember_id]) if article_search[:requestmember_id].present?
       articles = articles.where(user_id: article_search[:user_id]) if article_search[:user_id].present?
+      articles = articles.by_username(article_search[:user_name]) if article_search[:user_name].present?
 
     else
     end
