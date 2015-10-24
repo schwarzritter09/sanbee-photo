@@ -13,19 +13,20 @@
 
   <tbody>
     <% @articles.each do |article| %>
-      <tr class="<%= article.close_flag ? 'closed' : 'not_close' %> <%= cycle("even", "odd") %>">
+      <% tr_class = cycle("even", "odd") %>
+      <tr class="<%= article.close_flag ? 'closed' : 'not_close' %> <%= tr_class %>">
         <td>
           <%= article.message %>
-          <br>
-          <%= twitter_mention_tag article %>
         </td>
         <td><%= article.member.name %></td>
         <td>
           <% article.members.each do |requestmember| %>
-            <%= requestmember.name %> <br>
+            <div class="requestmember">
+              <%= requestmember.name %>
+            </div>
           <% end %>
         </td>
-        <td>
+        <td rowspan="2">
         <% if article.obverse_photo.present? %>
           <%= link_to image_tag(article.obverse_photo.thumb.url), article %>
         <% else %>
@@ -36,6 +37,11 @@
           <%= image_set_tag asset_path('star.png'), { asset_path('star.png') => '1x', asset_path('star@2x.png') => '2x'}, :border => '0', :align => 'left' %>
           裏書きあり
         <% end %>
+        </td>
+      </tr>
+      <tr class="<%= article.close_flag ? 'closed' : 'not_close' %> <%= tr_class %>">
+      	<td colspan="3">
+          <%= twitter_mention_tag article %>
         </td>
       </tr>
     <% end %>
