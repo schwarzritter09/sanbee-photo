@@ -43,6 +43,9 @@ gem 'carrierwave'
 # Use Paging
 gem 'kaminari'
 
+# Use Tweet
+gem 'twitter'
+
 # Use Heroku
 group :production, :staging do
   gem 'rails_12factor', group: :production

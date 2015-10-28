@@ -26,5 +26,11 @@ module SanbeePhoto
     config.assets.compile = true
     config.assets.digest = true
     config.serve_static_files = true
+    
+    # use tweet bot
+    config.tweet_consumer_key = "RLAMJWgTVdUFeHh4mx7rNJSA3"
+    config.tweet_consumer_secret = "zxiO9bqGQe9qZ7dIg3LxMhRwpC6P8xlK7jV08XhYKvwVyapO1X"
+    config.tweet_access_token = "4042896974-kzFFWkVsJ4rhpGJvDCkvdpZDasxGyHeOgH3oXcD"
+    config.tweet_access_token_secret = "ximjxZRp5E8yCVwpV4W3FTMbvgPYssVt7lYQoOeUTA4LS"
   end
 end

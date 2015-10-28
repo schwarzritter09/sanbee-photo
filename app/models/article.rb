@@ -34,4 +34,14 @@ class Article < ActiveRecord::Base
     articles.order('id DESC')
 
   end
+  
+  def request_member_list
+    names = ""
+    self.members.each_with_index do |requestmember, i|
+      names += requestmember.name
+      names += (i+1 >= self.members.count) ? '' : ','
+    end
+
+    names
+  end
 end

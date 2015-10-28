@@ -14,23 +14,12 @@ module ApplicationHelper
 
   def twitter_share_for(article)
     share_url = "https://twitter.com/share"
-    share_url += "?text=" + "【拡散希望】譲:#{article.member.name} 求:#{request_member_list article}"
+    share_url += "?text=" + "【拡散希望】譲:#{article.member.name} 求:#{article.request_member_list}"
     share_url += "&url=" + url_for(:controller => 'articles', :action => 'show', :id => article.id, :only_path => false)
     share_url += "&hashtags=3Bjr写真交換"
 
     share_url
   end
-
-  def request_member_list(article)
-    names = ""
-    article.members.each_with_index do |requestmember, i|
-      names += requestmember.name
-      names += (i+1 >= @article.members.count) ? '' : ','
-    end
-
-    names
-  end
-
 
   def twitter_mention_tag(article)
     link_to("@#{article.user.username}さんへツイート",
