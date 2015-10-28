@@ -10,8 +10,6 @@ class ArticlesController < ApplicationController
   # GET /articles/1
   # GET /articles/1.json
   def show
-    twitterClient = TwitterClient.new
-    twitterClient.tweet(@article)
   end
 
   # GET /articles/new
@@ -34,6 +32,8 @@ class ArticlesController < ApplicationController
       end
     end
 
+    twitterClient = TwitterClient.new
+    twitterClient.tweet(@article)
   end
 
   # POST /articles
@@ -54,6 +54,9 @@ class ArticlesController < ApplicationController
         format.json { render json: @article.errors, status: :unprocessable_entity }
       end
     end
+    
+    twitterClient = TwitterClient.new
+    twitterClient.tweet(@article)
   end
 
   # PATCH/PUT /articles/1
