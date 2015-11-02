@@ -28,9 +28,9 @@ module SanbeePhoto
     config.serve_static_files = true
     
     # use tweet bot
-    config.tweet_consumer_key = "RLAMJWgTVdUFeHh4mx7rNJSA3"
-    config.tweet_consumer_secret = "zxiO9bqGQe9qZ7dIg3LxMhRwpC6P8xlK7jV08XhYKvwVyapO1X"
-    config.tweet_access_token = "4042896974-kzFFWkVsJ4rhpGJvDCkvdpZDasxGyHeOgH3oXcD"
-    config.tweet_access_token_secret = "ximjxZRp5E8yCVwpV4W3FTMbvgPYssVt7lYQoOeUTA4LS"
+    config.tweet_consumer_key = "92JghxfQrZwXHHZXBIkalR9jf"
+    config.tweet_consumer_secret = "fbjNCNmKv6ETAkMQG4BXkcr1i5JnQcUkuDgVYFauLliXqz889g"
+    config.tweet_access_token = "4042896974-rRnfBMIpOaJvEyJfVA7ZSpP4l1btiFGL21VY3S1"
+    config.tweet_access_token_secret = "WQnp7iGy1jAspglzzCkx5baFBBTCaU0poyZzq3lMkC6pS"
   end
 end

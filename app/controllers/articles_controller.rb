@@ -31,9 +31,6 @@ class ArticlesController < ApplicationController
         format.html { render :show, notice: 'この投稿は変更できません。' }
       end
     end
-
-    twitterClient = TwitterClient.new
-    twitterClient.tweet(@article)
   end
 
   # POST /articles
@@ -46,7 +43,9 @@ class ArticlesController < ApplicationController
 
     respond_to do |format|
       if @article.save
-
+        twitterClient = TwitterClient.new
+        twitterClient.tweet(@article)
+    
         format.html { redirect_to @article, notice: '投稿しました。', flash: {isSuccess: true} }
         format.json { render :show, status: :created, location: @article }
       else
@@ -54,9 +53,6 @@ class ArticlesController < ApplicationController
         format.json { render json: @article.errors, status: :unprocessable_entity }
       end
     end
-    
-    twitterClient = TwitterClient.new
-    twitterClient.tweet(@article)
   end
 
   # PATCH/PUT /articles/1
@@ -71,6 +67,9 @@ class ArticlesController < ApplicationController
       respond_to do |format|
 
         if @article.update(article_params)
+          twitterClient = TwitterClient.new
+          twitterClient.tweet(@article)
+      
           format.html { redirect_to @article, notice: '更新しました。', flash: {isSuccess: true} }
           format.json { render :show, status: :ok, location: @article }
         else

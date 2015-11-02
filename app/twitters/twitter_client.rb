@@ -2,7 +2,8 @@ require 'twitter'
 
 class TwitterClient
   
-  def tweet(article)      
+  def tweet(article)
+    begin
       tweet = make_tweet(article)
       
       client = get_client
@@ -13,7 +14,9 @@ class TwitterClient
       media_ids.push(client.upload(open(article.reverse_photo.file.file))) if article.reverse_photo.present?
       
       client.update(tweet, :media_ids => media_ids.join(','))
-
+    rescue => e
+      Rails.logger.error "<<twitter.rake::tweet.update ERROR : #{e.message}>>"
+    end
   end
   
   def make_tweet(article)
