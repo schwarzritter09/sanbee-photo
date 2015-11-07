@@ -67,9 +67,6 @@ class ArticlesController < ApplicationController
       respond_to do |format|
 
         if @article.update(article_params)
-          twitterClient = TwitterClient.new
-          twitterClient.tweet(@article)
-      
           format.html { redirect_to @article, notice: '更新しました。', flash: {isSuccess: true} }
           format.json { render :show, status: :ok, location: @article }
         else
@@ -105,6 +102,6 @@ class ArticlesController < ApplicationController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def article_params
-      params.require(:article).permit(:message, :close_flag, :user_id, :member_id, :obverse_photo, :obverse_photo_cache, :remove_obverse_photo, :reverse_photo, :reverse_photo_cache, :remove_reverse_photo, requestmembers_attributes: [:id, :member_id, :_destroy])
+      params.require(:article).permit(:message, :close_flag, :user_id, :member_id, :trading_flag, :memo, :obverse_photo, :obverse_photo_cache, :remove_obverse_photo, :reverse_photo, :reverse_photo_cache, :remove_reverse_photo, requestmembers_attributes: [:id, :member_id, :_destroy])
     end
 end

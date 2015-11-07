@@ -42,6 +42,14 @@
   	
 　　    <% if user_signed_in? && @article.user_id == current_user.id %>
   	<tr>
+      <th>取引中フラグ</th>
+  	  <td>
+  	  	<% if @article.trading_flag %>
+  	  	  取引中 
+  	  	<% end %>
+  	   </td>
+  	</tr>
+  	<tr>
       <th>取引メモ</th>
   	  <td><%= @article.memo %></td>
   	</tr>
