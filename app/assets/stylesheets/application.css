@@ -68,3 +68,7 @@ table {
   background-image: linear-gradient(to bottom, #54bbff, #3498db);
   text-decoration: none;
 }
+
+input[type=checkbox] {
+	height: 30px;
+}
