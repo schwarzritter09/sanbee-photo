@@ -38,7 +38,6 @@
     <%= f.fields_for :requestmembers do |requestmember| %>
       <%= render 'requestmember_fields', :f => requestmember %>
     <% end%>
-    <br />
     <%= f.link_to_add "求メンバーを追加", :requestmembers %>
   </div>
   <br />

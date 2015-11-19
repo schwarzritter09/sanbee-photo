@@ -16,6 +16,10 @@ class ArticlesController < ApplicationController
   def new
     if user_signed_in?
       @article = Article.new
+      
+      current_user.favoritemembers.each do |favoritemember|
+        @article.requestmembers.new(member_id: favoritemember.member_id)
+      end
     else
       respond_to do |format|
         format.html { render :index, notice: 'ツイッターにてログイン後に投稿してください。' }

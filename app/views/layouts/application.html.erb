@@ -19,6 +19,15 @@
   </span>
   <% if user_signed_in? %>
   <span class="header_icon">
+    <%= link_to user_path(id: current_user.id) do %>
+      <%= image_set_tag asset_path('user.png'), { asset_path('user.png') => '1x', asset_path('user@2x.png') => '2x'}, :border => '0', :alt => '設定' %>
+      <br>
+      <span>
+                設定
+      </span>
+    <% end %>
+  </span class="header_icon">
+  <span class="header_icon">
     <%= link_to articles_path(:article_search => {:user_id => current_user.id} ) do %>
       <%= image_set_tag asset_path('mylist.png'), { asset_path('mylist.png') => '1x', asset_path('mylist@2x.png') => '2x'}, :border => '0', :alt => '自分の一覧' %>
       <br>

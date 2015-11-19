@@ -5,11 +5,19 @@
 p {
   font-size: 1.5rem
 }
-input,select {
+input, select {
   width: 100%;
   font-size: 120%;
   padding: 5px;
 }
+
+.nested_fields input, .nested_fields select {
+  width: calc(100% - 100px);
+  font-size: 120%;
+  padding: 5px;
+  margin-bottom: 20px;
+}
+
 
 input:focus,input:hover {
   background: #ACF3FF;

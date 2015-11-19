@@ -1,0 +1,25 @@
+<%= nested_form_for(@user) do |f| %>
+  <% if @user.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@user.errors.count, "error") %> prohibited this user from being saved:</h2>
+
+      <ul>
+      <% @user.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label '推し' %><br>
+    <%= f.fields_for :favoritemembers do |favoritemember| %>
+      <%= render 'favoritemember_fields', :f => favoritemember %>
+    <% end%>
+    <%= f.link_to_add "推しを追加", :favoritemembers %>
+  </div>
+  <br />
+  <div class="actions">
+    <%= f.submit "更新する" %>
+  </div>
+<% end %>

@@ -1,0 +1,15 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>ツイッターアカウント名:</strong>
+  <%= @user.username %>
+</p>
+<p>
+  <strong>推し:</strong>
+  <% @user.favoritemembers.each do |favoritemember| %>
+    <%= favoritemember.member.name %> 
+  <% end %>
+</p>
+
+<%= link_to '更新', edit_user_path(@user) %> |
+<%= link_to '戻る', root_path %>

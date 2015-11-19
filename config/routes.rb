@@ -10,6 +10,7 @@ Rails.application.routes.draw do
   resources :members
   resources :units
   resources :searcharticles
+  resources :users
 
   root 'articles#index'
   get 'articles/index'
