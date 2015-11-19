@@ -86,6 +86,10 @@ class ArticlesController < ApplicationController
         format.html { render :show, notice: 'この投稿は変更できません。' }
       end
     else
+      
+      twitterClient = TwitterClient.new
+      twitterClient.destroy(@article)
+      
       @article.destroy
       respond_to do |format|
         format.html { redirect_to articles_url, notice: 'Article was successfully destroyed.' }

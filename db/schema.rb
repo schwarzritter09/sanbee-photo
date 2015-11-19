@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20151107062844) do
+ActiveRecord::Schema.define(version: 20151119132855) do
 
   create_table "articles", force: :cascade do |t|
     t.string   "message"
@@ -24,6 +24,7 @@ ActiveRecord::Schema.define(version: 20151107062844) do
     t.string   "reverse_photo"
     t.boolean  "trading_flag"
     t.string   "memo"
+    t.string   "tweetid"
   end
 
   create_table "members", force: :cascade do |t|

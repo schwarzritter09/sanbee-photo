@@ -76,4 +76,11 @@ Rails.application.configure do
 
   # Do not dump schema after migrations.
   config.active_record.dump_schema_after_migration = false
+  
+  # use tweet bot
+  config.tweet_host = "ik1-341-30671.vs.sakura.ne.jp"
+  config.tweet_consumer_key = "92JghxfQrZwXHHZXBIkalR9jf"
+  config.tweet_consumer_secret = "fbjNCNmKv6ETAkMQG4BXkcr1i5JnQcUkuDgVYFauLliXqz889g"
+  config.tweet_access_token = "4042896974-rRnfBMIpOaJvEyJfVA7ZSpP4l1btiFGL21VY3S1"
+  config.tweet_access_token_secret = "WQnp7iGy1jAspglzzCkx5baFBBTCaU0poyZzq3lMkC6pS"
 end

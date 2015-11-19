@@ -1,79 +1,76 @@
-<p id="notice"><%= notice %></p>
-
 <% if @article.close_flag %>
-  <div class="">この投稿は取引済みです</div>
+  <% bodyClass="closed" %>
+<% else %>
+  <% bodyClass="open" %>
 <% end %>
 
-<table>
-  <tbody>
-  	<tr>
-  	  <th>メッセージ</th>
-  	  <td><%= @article.message %></td>
-  	</tr>
-  	<tr>
-  	  <th>投稿者</th>
-  	  <td><%= link_to @article.user.username, "http://twitter.com/#{@article.user.username}" %></td>
-  	</tr>
-  	<tr>
-  	  <th>譲</th>
-  	  <td><%= @article.member.name %></td>
-  	</tr>
-  	<tr>
-  	  <th>求</th>
-  	  <td>
-        <% @article.members.each do |requestmember| %>
-          <%= requestmember.name %> <br>
-        <% end %></td>
-  	</tr>
-  	<tr>
-  	  <th>表面</th>
-  	  <td>
-  	<% if @article.obverse_photo? %>
-  	  	<%= image_tag @article.obverse_photo.url %>
-  	<% end %></td>
-  	</tr>
-  	<tr>
-  	  <th>裏面</th>
-  	  <td>
-  	<% if @article.reverse_photo? %>
-  	  	<%= image_tag @article.reverse_photo.url %>
-  	<% end %></td>
-  	</tr>
-  	
-　　    <% if user_signed_in? && @article.user_id == current_user.id %>
-  	<tr>
-      <th>取引中フラグ</th>
-  	  <td>
-  	  	<% if @article.trading_flag %>
-  	  	  取引中 
-  	  	<% end %>
-  	   </td>
-  	</tr>
-  	<tr>
-      <th>取引メモ</th>
-  	  <td><%= @article.memo %></td>
-  	</tr>
-    <% end %>
-  </tbody>
-</table>
-
-<br><br>
-
-<%= twitter_mention_tag @article %>
-<br>
-<%= twitter_share_tag @article %>
-
-<br><br>
+<div class="<%= bodyClass %>">
+	<% if @article.close_flag %>
+	  <div class="">この投稿は取引済みです</div>
+	<% end %>
+	
+	<table>
+	  <tbody>
+	  	<tr>
+	  	  <th>メッセージ</th>
+	  	  <td><%= @article.message %></td>
+	  	</tr>
+	  	<tr>
+	  	  <th>投稿者</th>
+	  	  <td><%= link_to @article.user.username, "http://twitter.com/#{@article.user.username}" %></td>
+	  	</tr>
+	  	<tr>
+	  	  <th>譲</th>
+	  	  <td><%= @article.member.name %></td>
+	  	</tr>
+	  	<tr>
+	  	  <th>求</th>
+	  	  <td>
+	        <% @article.members.each do |requestmember| %>
+	          <%= requestmember.name %> <br>
+	        <% end %></td>
+	  	</tr>
+	  	<tr>
+	  	  <th>表面</th>
+	  	  <td>
+	  	<% if @article.obverse_photo? %>
+	  	  	<%= image_tag @article.obverse_photo.url %>
+	  	<% end %></td>
+	  	</tr>
+	  	<tr>
+	  	  <th>裏面</th>
+	  	  <td>
+	  	<% if @article.reverse_photo? %>
+	  	  	<%= image_tag @article.reverse_photo.url %>
+	  	<% end %></td>
+	  	</tr>
+	  	
+	　　    <% if user_signed_in? && @article.user_id == current_user.id %>
+	  	<tr>
+	      <th>取引中フラグ</th>
+	  	  <td>
+	  	  	<% if @article.trading_flag %>
+	  	  	  取引中 
+	  	  	<% end %>
+	  	   </td>
+	  	</tr>
+	  	<tr>
+	      <th>取引メモ</th>
+	  	  <td><%= @article.memo %></td>
+	  	</tr>
+	    <% end %>
+	  </tbody>
+	</table>
+	
+	<br><br>
+	
+	<%= twitter_mention_tag @article %>
+	<br>
+	<%= twitter_share_tag @article %>
+	<br><br>
+</div>
 <% if user_signed_in? && @article.user_id == current_user.id %>
 <%= link_to '編集', edit_article_path(@article) %> |
 <%= link_to '削除', @article, method: :delete, data: { confirm: '本当に削除しますか？' } %> |
 <% end %>
 <%= link_to '戻る', articles_path %>
-
-<% if flash[:isSuccess] %>
-<script type="text/javascript">
-  window.onload = function(){
-  	document.getElementById("tweetbtn").click()
-  }
-</script>
-<% end %>

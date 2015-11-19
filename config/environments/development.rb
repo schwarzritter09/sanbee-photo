@@ -38,4 +38,11 @@ Rails.application.configure do
 
   # Raises error for missing translations
   # config.action_view.raise_on_missing_translations = true
+  
+  # use tweet bot
+  config.tweet_host = "localhost"
+  config.tweet_consumer_key = "zYrvDAVNm0QRfdGkOVXOh55MX"
+  config.tweet_consumer_secret = "Efttcdt6pdLeIw1X6hnbX5LrgVRDbc4y0SodePYeBE01DmLjw2"
+  config.tweet_access_token = "209984728-0heNNNwAcN4t8YrrNG5JoYsK4ujYpE7TIKDuZmCQ"
+  config.tweet_access_token_secret = "zHD8sx6TT5MyxHHEYT1axnRYDABhTC02GsS7FhofZyAHG"
 end

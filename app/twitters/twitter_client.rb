@@ -2,9 +2,24 @@ require 'twitter'
 
 class TwitterClient
   
+  def destroy(article)
+    begin
+      if article.tweetid?
+        
+        client = get_client
+        client.destroy_status(article.tweetid)
+        article.tweetid = nil
+        article.save
+      end
+    rescue => e
+      Rails.logger.error "<<twitter.rake::tweet.destroy ERROR : #{e.message}>>"
+    end
+
+  end
+  
   def tweet(article)
     begin
-      tweet = make_tweet(article)
+      text = make_tweet(article)
       
       client = get_client
       
@@ -13,7 +28,10 @@ class TwitterClient
       media_ids.push(client.upload(open(article.obverse_photo.file.file))) if article.obverse_photo.present?
       media_ids.push(client.upload(open(article.reverse_photo.file.file))) if article.reverse_photo.present?
       
-      client.update(tweet, :media_ids => media_ids.join(','))
+      tweet = client.update(text, :media_ids => media_ids.join(','))
+      
+      article.tweetid = tweet.id
+      article.save
     rescue => e
       Rails.logger.error "<<twitter.rake::tweet.update ERROR : #{e.message}>>"
     end
@@ -23,7 +41,7 @@ class TwitterClient
     
       tweet = "投稿されました 譲:#{article.member.name} 求:#{article.request_member_list}"
       routes = Rails.application.routes.url_helpers
-      url = routes.url_for(:controller => "articles", :action => "show", :id => article.id, :host => 'ik1-341-30671.vs.sakura.ne.jp', :only_path => false)
+      url = routes.url_for(:controller => "articles", :action => "show", :id => article.id, :host => SanbeePhoto::Application.config.tweet_host, :only_path => false)
       username = "@" + article.user.username
       hashtag = "#3Bjr写真交換"
       
