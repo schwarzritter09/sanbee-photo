@@ -91,9 +91,9 @@
 
   <div class="actions">
   	<% if @article.persisted? %>
-      <%= f.submit '更新する' %>
+      <%= f.submit '更新する', data: { disable_with: '更新中'} %>
   	<% else %>
-      <%= f.submit '登録する' %>
+      <%= f.submit '登録する', data: { disable_with: '登録中'} %>
     <% end %>
   </div>
 <% end %>
