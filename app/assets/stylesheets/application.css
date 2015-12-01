@@ -16,11 +16,16 @@
 
 BODY {
 	font-size: 2rem;
+    padding-top: 120px;
 }
 
 .header {
 	text-align: right;
 	background-color: #CCFFFF;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
 }
 
 .header_icon {

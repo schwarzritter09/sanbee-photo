@@ -1,0 +1,32 @@
+/* line 5, c:/pleiades/workspace_3bphoto/3bjr_photo/sanbee-photo/app/assets/stylesheets/searcharticles.scss */
+p {
+  font-size: 1.5rem;
+}
+
+/* line 8, c:/pleiades/workspace_3bphoto/3bjr_photo/sanbee-photo/app/assets/stylesheets/searcharticles.scss */
+input, select {
+  width: 100%;
+  font-size: 120%;
+  padding: 5px;
+}
+
+/* line 14, c:/pleiades/workspace_3bphoto/3bjr_photo/sanbee-photo/app/assets/stylesheets/searcharticles.scss */
+.nested_fields input, .nested_fields select {
+  width: calc(100% - 100px);
+  font-size: 120%;
+  padding: 5px;
+  margin-bottom: 20px;
+}
+
+/* line 22, c:/pleiades/workspace_3bphoto/3bjr_photo/sanbee-photo/app/assets/stylesheets/searcharticles.scss */
+input:focus, input:hover {
+  background: #ACF3FF;
+}
+
+/* line 26, c:/pleiades/workspace_3bphoto/3bjr_photo/sanbee-photo/app/assets/stylesheets/searcharticles.scss */
+input[type="submit"] {
+  width: 100%;
+  font-size: 80%;
+  margin: 0;
+  padding: 5px;
+}

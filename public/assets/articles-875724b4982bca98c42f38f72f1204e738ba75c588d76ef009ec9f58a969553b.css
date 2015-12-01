@@ -1,0 +1,31 @@
+/* line 5, c:/pleiades/workspace_3bphoto/3bjr_photo/sanbee-photo/app/assets/stylesheets/articles.scss */
+tr.odd td {
+  background-color: #DDFFFF;
+}
+
+/* line 9, c:/pleiades/workspace_3bphoto/3bjr_photo/sanbee-photo/app/assets/stylesheets/articles.scss */
+tr.even td {
+  background-color: #AAFFFF;
+}
+
+/* line 13, c:/pleiades/workspace_3bphoto/3bjr_photo/sanbee-photo/app/assets/stylesheets/articles.scss */
+tr.closed td {
+  background-color: #C0C0C0;
+}
+
+/* line 17, c:/pleiades/workspace_3bphoto/3bjr_photo/sanbee-photo/app/assets/stylesheets/articles.scss */
+div.requestmember {
+  margin-top: 0.3em;
+  margin-bottom: 0.3em;
+}
+
+/* line 26, c:/pleiades/workspace_3bphoto/3bjr_photo/sanbee-photo/app/assets/stylesheets/articles.scss */
+.closed {
+  background-color: gray;
+}
+
+/* line 30, c:/pleiades/workspace_3bphoto/3bjr_photo/sanbee-photo/app/assets/stylesheets/articles.scss */
+.loading {
+  display: none;
+  text-align: center;
+}

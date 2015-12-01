@@ -1,0 +1,210 @@
+/* line 5, c:/pleiades/workspace_3bphoto/3bjr_photo/sanbee-photo/app/assets/stylesheets/articles.scss */
+tr.odd td {
+  background-color: #DDFFFF;
+}
+
+/* line 9, c:/pleiades/workspace_3bphoto/3bjr_photo/sanbee-photo/app/assets/stylesheets/articles.scss */
+tr.even td {
+  background-color: #AAFFFF;
+}
+
+/* line 13, c:/pleiades/workspace_3bphoto/3bjr_photo/sanbee-photo/app/assets/stylesheets/articles.scss */
+tr.closed td {
+  background-color: #C0C0C0;
+}
+
+/* line 17, c:/pleiades/workspace_3bphoto/3bjr_photo/sanbee-photo/app/assets/stylesheets/articles.scss */
+div.requestmember {
+  margin-top: 0.3em;
+  margin-bottom: 0.3em;
+}
+
+/* line 26, c:/pleiades/workspace_3bphoto/3bjr_photo/sanbee-photo/app/assets/stylesheets/articles.scss */
+.closed {
+  background-color: gray;
+}
+/* line 1, c:/pleiades/workspace_3bphoto/3bjr_photo/sanbee-photo/app/assets/stylesheets/scaffolds.scss */
+body {
+  background-color: #fff;
+  color: #333;
+  font-family: verdana, arial, helvetica, sans-serif;
+}
+
+/* line 7, c:/pleiades/workspace_3bphoto/3bjr_photo/sanbee-photo/app/assets/stylesheets/scaffolds.scss */
+p, ol, ul, td {
+  font-family: verdana, arial, helvetica, sans-serif;
+}
+
+/* line 11, c:/pleiades/workspace_3bphoto/3bjr_photo/sanbee-photo/app/assets/stylesheets/scaffolds.scss */
+pre {
+  background-color: #eee;
+  padding: 10px;
+  font-size: 11px;
+}
+
+/* line 17, c:/pleiades/workspace_3bphoto/3bjr_photo/sanbee-photo/app/assets/stylesheets/scaffolds.scss */
+a {
+  color: #000;
+}
+/* line 20, c:/pleiades/workspace_3bphoto/3bjr_photo/sanbee-photo/app/assets/stylesheets/scaffolds.scss */
+a:visited {
+  color: #666;
+}
+/* line 24, c:/pleiades/workspace_3bphoto/3bjr_photo/sanbee-photo/app/assets/stylesheets/scaffolds.scss */
+a:hover {
+  color: #fff;
+  background-color: #000;
+}
+
+/* line 31, c:/pleiades/workspace_3bphoto/3bjr_photo/sanbee-photo/app/assets/stylesheets/scaffolds.scss */
+div.field, div.actions {
+  margin-bottom: 10px;
+}
+
+/* line 36, c:/pleiades/workspace_3bphoto/3bjr_photo/sanbee-photo/app/assets/stylesheets/scaffolds.scss */
+#notice {
+  color: green;
+}
+
+/* line 40, c:/pleiades/workspace_3bphoto/3bjr_photo/sanbee-photo/app/assets/stylesheets/scaffolds.scss */
+.field_with_errors {
+  padding: 2px;
+  background-color: red;
+  display: table;
+}
+
+/* line 46, c:/pleiades/workspace_3bphoto/3bjr_photo/sanbee-photo/app/assets/stylesheets/scaffolds.scss */
+#error_explanation {
+  width: 450px;
+  border: 2px solid red;
+  padding: 7px;
+  padding-bottom: 0;
+  margin-bottom: 20px;
+  background-color: #f0f0f0;
+}
+/* line 54, c:/pleiades/workspace_3bphoto/3bjr_photo/sanbee-photo/app/assets/stylesheets/scaffolds.scss */
+#error_explanation h2 {
+  text-align: left;
+  font-weight: bold;
+  padding: 5px 5px 5px 15px;
+  margin: -7px;
+  margin-bottom: 0px;
+  background-color: #c00;
+  color: #fff;
+}
+/* line 64, c:/pleiades/workspace_3bphoto/3bjr_photo/sanbee-photo/app/assets/stylesheets/scaffolds.scss */
+#error_explanation ul li {
+  list-style: square;
+}
+/* line 5, c:/pleiades/workspace_3bphoto/3bjr_photo/sanbee-photo/app/assets/stylesheets/searcharticles.scss */
+p {
+  font-size: 1.5rem;
+}
+
+/* line 8, c:/pleiades/workspace_3bphoto/3bjr_photo/sanbee-photo/app/assets/stylesheets/searcharticles.scss */
+input, select {
+  width: 100%;
+  font-size: 120%;
+  padding: 5px;
+}
+
+/* line 14, c:/pleiades/workspace_3bphoto/3bjr_photo/sanbee-photo/app/assets/stylesheets/searcharticles.scss */
+.nested_fields input, .nested_fields select {
+  width: calc(100% - 100px);
+  font-size: 120%;
+  padding: 5px;
+  margin-bottom: 20px;
+}
+
+/* line 22, c:/pleiades/workspace_3bphoto/3bjr_photo/sanbee-photo/app/assets/stylesheets/searcharticles.scss */
+input:focus, input:hover {
+  background: #ACF3FF;
+}
+
+/* line 26, c:/pleiades/workspace_3bphoto/3bjr_photo/sanbee-photo/app/assets/stylesheets/searcharticles.scss */
+input[type="submit"] {
+  width: 100%;
+  font-size: 80%;
+  margin: 0;
+  padding: 5px;
+}
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or any plugin's vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any styles
+ * defined in the other CSS/SCSS files in this directory. It is generally better to create a new
+ * file per style scope.
+ *
+
+
+ */
+
+
+BODY {
+	font-size: 2rem;
+    padding-top: 120px;
+}
+
+.header {
+	text-align: right;
+	background-color: #CCFFFF;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+}
+
+.header_icon {
+	display: inline-block;
+    text-align: center;
+}
+
+.header_icon a{
+	text-decoration: none;
+}
+
+table {
+	width: 100%;
+}
+
+.tweetbtn {
+  background: #3498db;
+  background-image: -webkit-linear-gradient(top, #3498db, #2980b9);
+  background-image: -moz-linear-gradient(top, #3498db, #2980b9);
+  background-image: -ms-linear-gradient(top, #3498db, #2980b9);
+  background-image: -o-linear-gradient(top, #3498db, #2980b9);
+  background-image: linear-gradient(to bottom, #3498db, #2980b9);
+  -webkit-border-radius: 28;
+  -moz-border-radius: 28;
+  border-radius: 28px;
+  color: #ffffff;
+  display: block;
+  padding: 2px 10px 2px 10px;
+  margin: 0px 5px 0px 5px;
+  text-decoration: none;
+  white-space: nowrap;
+  text-align: center;
+}
+
+.tweetbtn:visited {
+  color: #ffffff;
+}
+
+.tweetbtn:hover {
+  background: #54bbff;
+  background-image: -webkit-linear-gradient(top, #54bbff, #3498db);
+  background-image: -moz-linear-gradient(top, #54bbff, #3498db);
+  background-image: -ms-linear-gradient(top, #54bbff, #3498db);
+  background-image: -o-linear-gradient(top, #54bbff, #3498db);
+  background-image: linear-gradient(to bottom, #54bbff, #3498db);
+  text-decoration: none;
+}
+
+input[type=checkbox] {
+	height: 30px;
+}

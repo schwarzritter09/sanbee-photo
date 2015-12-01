@@ -10,9 +10,16 @@
 // Read Sprockets README (https://github.com/rails/sprockets#sprockets-directives) for details
 // about supported directives.
 //
-//= require jquery
-//= require jquery_ujs
-//= require turbolinks
-//= require_tree .
-//= require jquery_nested_form
-//= require jquery.infinitescroll
+var loadingFlag = false;
+$(window).scroll(function() {
+  console.log(loadingFlag);
+  var current = $(window).scrollTop + window.innerHeight;
+  console.log(current);
+
+  if(current > $(document).height() - 100){
+    console.log("loading");
+  }else{
+    console.log("none loading");
+  }
+
+});
