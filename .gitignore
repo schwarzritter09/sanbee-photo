@@ -33,3 +33,7 @@ bower.json
 
 # Ignore pow environment settings
 .powenv
+
+# Ignore upload files
+/public/uploads/article/obverse_photo
+/public/uploads/article/reverse_photo
